@@ -1,39 +1,7 @@
 ---
-id: 232
 title: Secure cross-platform password management
 date: 2015-12-26T17:59:23+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=232
-permalink: /2015/12/secure-cross-platform-password-management/
-post_icons:
-  - 0
-featured_stamp:
-  - 0
-slider_images:
-  - 0
-image:
-  - 
-link_title:
-  - 
-link_url:
-  - 
-the_quote:
-  - 
-video_height:
-  - 280px
-video_upload:
-  - 
-video_url:
-  - 
-video_poster:
-  - 
-video_embed:
-  - 
-audio_upload:
-  - 
-audio_url:
-  - 
 categories:
   - Android
   - Linux
@@ -54,7 +22,7 @@ Secure cross-platform password management is required not only because we have m
 
 If you are writing down passwords, using the same passwords for multiple accounts or creating passwords from names and birth dates then don&#8217;t whine when your accounts get hacked.<figure style="width: 740px" class="wp-caption alignnone">
 
-<img class="" src="http://i1.wp.com/imgs.xkcd.com/comics/password_strength.png?resize=650%2C528" alt="XKCD: Password Stength" data-recalc-dims="1" /><figcaption class="wp-caption-text">Password Strength</figcaption></figure> 
+<img class="" src="http://i1.wp.com/imgs.xkcd.com/comics/password_strength.png?resize=650%2C528" alt="XKCD: Password Stength" data-recalc-dims="1" /><figcaption class="wp-caption-text">Password Strength</figcaption></figure>
 
 To add to the security, once a year, I have an Internet Spring Cleaning and go through all my accounts and change the passwords or delete accounts I no longer use.
 

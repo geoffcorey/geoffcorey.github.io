@@ -1,39 +1,7 @@
 ---
-id: 194
 title: Understanding Bitcoin
 date: 2015-03-28T13:43:36+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=194
-permalink: /2015/03/understanding-bitcoin/
-post_icons:
-  - 0
-featured_stamp:
-  - 0
-slider_images:
-  - 0
-image:
-  - 
-link_title:
-  - 
-link_url:
-  - 
-the_quote:
-  - 
-video_height:
-  - 280px
-video_upload:
-  - 
-video_url:
-  - 
-video_poster:
-  - 
-video_embed:
-  - 
-audio_upload:
-  - 
-audio_url:
-  - 
 categories:
   - Bitcoin
   - Money
@@ -44,7 +12,9 @@ tags:
   - changetip
   - coinbase
 ---
-[<img class="alignright size-full wp-image-199" src="http://i2.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/bitcoin-logo.png?fit=150%2C45" alt="bitcoin" data-recalc-dims="1" />](http://i2.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/bitcoin-logo-e1427415909226.png)Understanding Bitcoin can be a bit daunting for most folks. There is a wealth of information on Bitcoin out there on what it is and how to use it and of course stories of the <a title="Evolution Black Market Disappears" href="http://krebsonsecurity.com/2015/03/dark-webs-evolution-market-vanishes/" target="_blank">black markets</a> and <a title="Mt. Gox Bitcoin Exchange Bankrupt" href="http://en.wikipedia.org/wiki/Mt._Gox" target="_blank">exchanges</a> that disappeared with folks money. Let me try to cut through the noise and give you my layman&#8217;s view of bitcoin and it&#8217;s advantages and disadvantages from money and credit cards.
+[<img class="alignright size-full wp-image-199" src="http://i2.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/bitcoin-logo.png?fit=150%2C45" alt="bitcoin" data-recalc-dims="1" />](http://i2.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/bitcoin-logo-e1427415909226.png)
+
+Understanding Bitcoin can be a bit daunting for most folks. There is a wealth of information on Bitcoin out there on what it is and how to use it and of course stories of the <a title="Evolution Black Market Disappears" href="http://krebsonsecurity.com/2015/03/dark-webs-evolution-market-vanishes/" target="_blank">black markets</a> and <a title="Mt. Gox Bitcoin Exchange Bankrupt" href="http://en.wikipedia.org/wiki/Mt._Gox" target="_blank">exchanges</a> that disappeared with folks money. Let me try to cut through the noise and give you my layman&#8217;s view of bitcoin and it&#8217;s advantages and disadvantages from money and credit cards.
 
 First off, think of bitcoin as walking around with cash. You go to the store and pay for stuff and you are pretty much  anonymous who you are to the store and you get goods. If you want to buy illegal stuff in some internet based black market with bitcoin, there is a good chance you could be scammed and lose your money. If you go to some black market to buy illegal stuff with cash in person there is a chance that not only can you lose your cash but injured or killed. So in a nutshell, bitcoin is cash except you don&#8217;t need a middle man to send the bitcoins to anyone in the world.
 

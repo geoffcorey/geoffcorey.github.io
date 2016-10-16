@@ -1,11 +1,7 @@
 ---
-id: 235
 title: Using Ansible to Create a Linux Development Environment
 date: 2015-09-29T19:25:03+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=235
-permalink: /2015/09/using-ansible-to-create-a-linux-development-environment/
 categories:
   - Dotfiles
 tags:

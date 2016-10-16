@@ -1,15 +1,7 @@
 ---
-id: 91
 title: Managing Dotfiles Across Multiple Platforms
 date: 2015-03-15T21:34:37+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=91
-permalink: /2015/03/managing-dotfiles-across-multiple-platforms/
-pluto_featured_video_id:
-  - 
-pluto_featured_video_enabled:
-  - 0
 categories:
   - Dotfiles
 tags:
@@ -20,7 +12,9 @@ tags:
   - myrepos
   - vcsh
 ---
-[<img class="alignright wp-image-106 size-full" src="http://i0.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/dofile.png?fit=134%2C82" alt="managing dotfiles" data-recalc-dims="1" />](http://i0.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/dofile.png)Managing dotfiles can be a task.  Managing dotfiles across multiple platforms need more then just a single git repo and a shell script.   I currently develop on OS/X, Linux w/i3 window manager and remote linux accounts without X Windows.   The task is compounded that I have not standardized on a single linux distribution and use both Ubuntu and Arch.
+[<img class="alignright wp-image-106 size-full" src="http://i0.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/dofile.png?fit=134%2C82" alt="managing dotfiles" data-recalc-dims="1" />](http://i0.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/dofile.png)
+
+Managing dotfiles can be a task.  Managing dotfiles across multiple platforms need more then just a single git repo and a shell script.   I currently develop on OS/X, Linux w/i3 window manager and remote linux accounts without X Windows.   The task is compounded that I have not standardized on a single linux distribution and use both Ubuntu and Arch.
 
 Researching on ways to manage beyond writing a custom shell script I have found using git plus vcsh and mr to fit the bill to allow me to manage dotfiles for linux, os/x and even X11 scripts.   Keeping repos separate I can manage dotfiles for the specific.
 
@@ -31,7 +25,7 @@ First thing first, create the repo. If you do not have an account with github th
 If this is a new github account then generate your ssh key if you don&#8217;t have one and copy/paste your key in directory ~/.ssh/id_rsa.pub to your <a title="GitHub: Manage your SSH keys" href="https://github.com/settings/ssh" target="_blank">Github account settings to manage sshkeys</a>.    If you need to generate your SSH keys:
 
 cd ~
-  
+
 ssh-keygen -t rsa
 
 Now we need to decide before doing anything how we want to install and manage the dotfiles. There are several options:
@@ -106,7 +100,7 @@ Next, on my local machine we use vcsh to create a local repo for ~/bin and then 
 
 <pre>geoff@dev:~$ <strong>vcsh init bin</strong>
 Initialized empty Git repository in /home/geoff/.config/vcsh/repo.d/bin.git/
-geoff@dev:~$ <strong>vcsh bin bin/bootstrap.sh</strong> 
+geoff@dev:~$ <strong>vcsh bin bin/bootstrap.sh</strong>
 git: 'bin/bootstrap.sh' is not a git command. See 'git --help'.
 geoff@dev:~$ <strong>vcsh bin add bin/bootstrap.sh</strong>
 geoff@dev:~$ <strong>git config --global user.email "geoff@geoffcorey.com"</strong>
@@ -175,7 +169,7 @@ Next create a blank mr repo on Github and change the origin URL for mr.
 Next let&#8217;s remove RichiH&#8217;s zsh.vcsh since we don&#8217;t plan on using his config. We also need to edit .config/available.d/mr.vcsh and point that to our repo instead of RichH&#8217;s.
 
 <pre style="padding-left: 30px;">$ nvim .config/mr/available.d/mr.vcsh
-$ vcsh mr remove .config/mr/available.d/zsh.vcsh 
+$ vcsh mr remove .config/mr/available.d/zsh.vcsh
 $ vcsh mr commit -m "remove RichiH's zsh.vcsh and modified mr.vcsh to point to our repo"
 </pre>
 
@@ -184,10 +178,10 @@ Next, create <a href="https://github.com/geoffcorey/mr/blob/master/.config/mr/av
 <pre style="padding-left: 30px;">$ cd .config/mr/config.d
 $ ln -s ../available.d/bin.vcsh .
 $ ln -s ../available.d/neovimrc.vcsh .
-$ vcsh mr add .config/mr/available.d/bin.vcsh 
-$ vcsh mr add .config/mr/available.d/neovimrc.vcsh 
-$ vcsh mr add .config/mr/config.d/bin.vcsh 
-$ vcsh mr add .config/mr/config.d/neovimrc.vcsh 
+$ vcsh mr add .config/mr/available.d/bin.vcsh
+$ vcsh mr add .config/mr/available.d/neovimrc.vcsh
+$ vcsh mr add .config/mr/config.d/bin.vcsh
+$ vcsh mr add .config/mr/config.d/neovimrc.vcsh
 $ vcsh mr commit -m "Added bin and neovimrc"
 </pre>
 
@@ -213,12 +207,9 @@ $ mr up</pre>
 ## Resources
 
 <a title="Manage multiple git repos from single directory" href="https://github.com/RichiH/vcsh" target="_blank">vcsh</a>
-  
-<a title="myrepos" href="https://github.com/joeyh/myrepos" target="_blank">mr</a>
-  
-<a title="Your unofficial guide to dotfiles on GitHub." href="http://dotfiles.github.io" target="_blank">Github Dotfiles</a>
-  
-<a title="NeoVim - Better then Vim" href="http://neovim.org/" target="_blank">NeoVim</a>
 
-<div class="changetip_tipme_button" data-bid="5fuR8ai3qxGuB6X9Y2md79" data-uid="kZJeSKkyNFLTcR9hhZcRyH">
-</div>
+<a title="myrepos" href="https://github.com/joeyh/myrepos" target="_blank">mr</a>
+
+<a title="Your unofficial guide to dotfiles on GitHub." href="http://dotfiles.github.io" target="_blank">Github Dotfiles</a>
+
+<a title="NeoVim - Better then Vim" href="http://neovim.org/" target="_blank">NeoVim</a>

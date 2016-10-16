@@ -1,43 +1,7 @@
 ---
-id: 84
 title: Online Banking Using Simple
 date: 2015-03-13T22:51:22+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=84
-permalink: /2015/03/online-banking-using-simple/
-pluto_featured_video_id:
-  - 
-pluto_featured_video_enabled:
-  - 0
-post_icons:
-  - 0
-featured_stamp:
-  - 0
-slider_images:
-  - 0
-image:
-  - 
-link_title:
-  - 
-link_url:
-  - 
-the_quote:
-  - 
-video_height:
-  - 280px
-video_upload:
-  - 
-video_url:
-  - 
-video_poster:
-  - 
-video_embed:
-  - 
-audio_upload:
-  - 
-audio_url:
-  - 
 categories:
   - Money
 tags:
@@ -50,7 +14,7 @@ So this is the digital age right?  Why do I have to get in my car and drive dow
 
 ## Online Banking Using Simple<figure id="attachment_85" style="width: 300px" class="wp-caption alignright">
 
-[<img class="wp-image-85 size-medium" src="http://i2.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/simple-300x169.png?fit=300%2C169" alt="Online Banking Using Simple" srcset="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/simple.png?resize=300%2C169 300w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/simple.png?w=1010 1010w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/simple.png)<figcaption class="wp-caption-text">Online Banking Using Simple</figcaption></figure> 
+[<img class="wp-image-85 size-medium" src="http://i2.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/simple-300x169.png?fit=300%2C169" alt="Online Banking Using Simple" srcset="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/simple.png?resize=300%2C169 300w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/simple.png?w=1010 1010w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" />](http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/simple.png)
 
 <a title="Simple Online Bank" href="http://simple.com" target="_blank">Simple</a> is an online bank that is affiliated with Bancorp and they named the bank right!  Sign up on Simple needed your basics:  Name, SSN, Address and Phone.    They take a day or two to verify your information before enabling your account.   Once enabled you download and sign in with an iPhone or Android mobile application and provide a signature using the touchscreen.
 
@@ -67,6 +31,3 @@ It&#8217;s a bank so they will issue you a VISA debit card for daily use. They a
 ## Activity
 
 The online site is a very simple layout and you can see all transactions on the account and also setup spending and saving goals to manage your budget.
-
-<div class="changetip_tipme_button" data-bid="hzDeTvM8SX7STLXyAhqTAT" data-uid="kZJeSKkyNFLTcR9hhZcRyH">
-</div>

@@ -1,39 +1,7 @@
 ---
-id: 209
 title: Setup Amazon AWS wildcard SSL certificate
 date: 2015-04-19T14:54:01+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=209
-permalink: /2015/04/setup-amazon-aws-wildcard-ssl-certificate/
-post_icons:
-  - 0
-featured_stamp:
-  - 0
-slider_images:
-  - 0
-image:
-  - 
-link_title:
-  - 
-link_url:
-  - 
-the_quote:
-  - 
-video_height:
-  - 280px
-video_upload:
-  - 
-video_url:
-  - 
-video_poster:
-  - 
-video_embed:
-  - 
-audio_upload:
-  - 
-audio_url:
-  - 
 categories:
   - Amazon AWS
   - SSL
@@ -64,7 +32,7 @@ Make sure you have an admin email user for the domain (ex. admin@geoffcorey.com)
 
 ## Create a CSR
 
-    
+
     openssl req -key geoffcorey.com.key -out geoffcorey.com.csr -new
     Enter pass phrase for geoffcorey.com.key:
     You are about to be asked to enter information that will be incorporated
@@ -81,12 +49,12 @@ Make sure you have an admin email user for the domain (ex. admin@geoffcorey.com)
     Organizational Unit Name (eg, section) []:
     Common Name (e.g. server FQDN or YOUR name) []:*.geoffcorey.com
     Email Address []:admin@geoffcorey.com
-    
+
     Please enter the following 'extra' attributes
     to be sent with your certificate request
     A challenge password []:
     An optional company name []:
-    
+
 
 To complete your purchase of the wildcard, copy the contents of geoffcorey.com.csr to Comodo order and you will get emailed a zip file containing the following files:
 
@@ -98,13 +66,15 @@ To complete your purchase of the wildcard, copy the contents of geoffcorey.com.c
 
 Now we just need the public and private key in PEM format.
 
-    
+
     openssl rsa -in geoffcorey.com.key -outform PEM >private.pem
     openssl x509 -inform PEM -in STAR_geoffcorey_com.crt >public.pem
 
 # Setup Amazon AWS wildcard SSL certificate
 
-[<img class="alignright wp-image-215 size-full" src="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/04/AmazonWebservices_Logo.svg_.png?fit=200%2C80" alt="Amazon Web Services" data-recalc-dims="1" />](http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/04/AmazonWebservices_Logo.svg_-e1429453915410.png)Now that we have a wildcard certificate we need to add it to our Amazon AWS account and make 2 versions.   The first version is what we will use for Amazon Elastic Beanstalk and Elastic Load Balancers.    The second version is uploaded slightly different and use for Amazon CloudFront to serve S3 assets using our domain with SSL.
+[<img class="alignright wp-image-215 size-full" src="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/04/AmazonWebservices_Logo.svg_.png?fit=200%2C80" alt="Amazon Web Services" data-recalc-dims="1" />](http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/04/AmazonWebservices_Logo.svg_-e1429453915410.png)
+
+Now that we have a wildcard certificate we need to add it to our Amazon AWS account and make 2 versions.   The first version is what we will use for Amazon Elastic Beanstalk and Elastic Load Balancers.    The second version is uploaded slightly different and use for Amazon CloudFront to serve S3 assets using our domain with SSL.
 
 ## Install AWS CLI
 
@@ -120,15 +90,15 @@ Create IAM credentials on AWS and get your access key and secret access key.  <
 
 First copy is for server use such as Elastic Beanstalk or Elastic Load Balancers
 
-    
+
     aws iam upload-servercertificate --server-certificate-name geoffcorey.com --certificate-body file://STAR_geoffcorey_com.pem --private-key file://geoffcorey_com.pem --certificate-chain STAR_geoffcorey_com.ca-bundle
-    
+
 
 This copy is used if you want to have an alternate domain name with Amazon Cloudfront to serve your S3 assest under your domain name.  Note the use of the **&#8211;path** option.
 
-    
+
     aws iam upload-servercertificate --server-certificate-name geoffcorey.com-cloudfront --certificate-body file://STAR_geoffcorey_com.pem --private-key file://geoffcorey_com.pem --certificate-chain STAR_geoffcorey_com.ca-bundle --path /cloudfront/
-    
+
 
 ## Setup Amazon Elastic Beanstalk wildcard SSL certificate
 

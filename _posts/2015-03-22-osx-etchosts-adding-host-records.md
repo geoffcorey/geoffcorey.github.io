@@ -1,39 +1,7 @@
 ---
-id: 183
 title: 'OS/X /etc/hosts &#8211; Adding Host Records'
 date: 2015-03-22T13:34:13+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=183
-permalink: /2015/03/osx-etchosts-adding-host-records/
-post_icons:
-  - 0
-featured_stamp:
-  - 0
-slider_images:
-  - 0
-image:
-  - 
-link_title:
-  - 
-link_url:
-  - 
-the_quote:
-  - 
-video_height:
-  - 280px
-video_upload:
-  - 
-video_url:
-  - 
-video_poster:
-  - 
-video_embed:
-  - 
-audio_upload:
-  - 
-audio_url:
-  - 
 categories:
   - OS/X
 tags:
@@ -48,7 +16,7 @@ tags:
   2. Add my.domain.name
   3. Flush the cache
 
-<pre>sudo vi /private/etc/hosts 
+<pre>sudo vi /private/etc/hosts
 sudo dscacheutil -flushcache
 sudo killall -HUP mDNSResponder
 </pre>

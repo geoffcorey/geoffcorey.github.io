@@ -1,6 +1,6 @@
 title: "Geoffrey Corey"
-description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
-about: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+description: "Things I learned today . . ."
+about: "Public notes, thoughts and things I don't want to forget"
 location: "North Carolina, USA"
 email: geoffrey.w.corey@gmail.com
 baseurl: ""
@@ -37,7 +37,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     tab_width: 4
-    
+
 # third party gems
 gems:
   - jekyll-paginate
@@ -48,7 +48,7 @@ whitelist:
   - jekyll-paginate
   - jekyll-gist
   - jemoji
-  
+
 # exclude files
 exclude:
   - LICENSE

@@ -1,39 +1,7 @@
 ---
-id: 265
 title: Rethinking my Linux setup
 date: 2015-12-29T02:57:06+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=265
-permalink: /2015/12/rethinking-my-linux-setup/
-post_icons:
-  - 0
-featured_stamp:
-  - 0
-slider_images:
-  - 0
-image:
-  - 
-link_title:
-  - 
-link_url:
-  - 
-the_quote:
-  - 
-video_height:
-  - 280px
-video_upload:
-  - 
-video_url:
-  - 
-video_poster:
-  - 
-video_embed:
-  - 
-audio_upload:
-  - 
-audio_url:
-  - 
 categories:
   - Linux
 tags:
@@ -54,7 +22,7 @@ I have been rethinking my Linux setup.   Several things I like and don&#8217;t 
   * IRC: WeeChat
   * Messaging: Signal, Hangouts
 
-## 
+##
 
 ## <a href="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png" rel="attachment wp-att-267"><img class="alignright size-full wp-image-267" src="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?fit=650%2C365" alt="2015-12-28-214400_1366x768_scrot" srcset="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?w=1366 1366w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=300%2C169 300w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=768%2C432 768w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=1024%2C576 1024w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=1200%2C675 1200w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?w=1300 1300w" sizes="(max-width: 650px) 100vw, 650px" data-recalc-dims="1" /></a>
 

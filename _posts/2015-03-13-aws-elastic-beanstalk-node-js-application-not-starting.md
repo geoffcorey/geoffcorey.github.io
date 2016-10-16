@@ -1,43 +1,7 @@
 ---
-id: 63
 title: AWS Elastic Beanstalk Node.js Application Not Starting
 date: 2015-03-13T03:42:52+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=63
-permalink: /2015/03/aws-elastic-beanstalk-node-js-application-not-starting/
-pluto_featured_video_id:
-  - 
-pluto_featured_video_enabled:
-  - 0
-post_icons:
-  - 0
-featured_stamp:
-  - 0
-slider_images:
-  - 0
-image:
-  - 
-link_title:
-  - 
-link_url:
-  - 
-the_quote:
-  - 
-video_height:
-  - 280px
-video_upload:
-  - 
-video_url:
-  - 
-video_poster:
-  - 
-video_embed:
-  - 
-audio_upload:
-  - 
-audio_url:
-  - 
 categories:
   - Node.js
 tags:
@@ -47,7 +11,7 @@ tags:
 ---
 I had an  AWS Elastic Beanstalk node.js application not starting in one environment but would in the other environments. I typically have 3 or more environments for a service setup: localhost, dev, staging and prod. I deploy a build using <git commit #>.zip to dev  after testing on my local machine.  If all seems well I deploy up the environment chain until it is finally deployed in production.<figure id="attachment_70" style="width: 300px" class="wp-caption alignright">
 
-[<img class="size-medium wp-image-70" src="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/works-on-my-machine-300x196.jpg?fit=300%2C196" alt="it works on my machine" data-recalc-dims="1" />](http://i2.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/works-on-my-machine-e1426944703435.jpg)<figcaption class="wp-caption-text">AWS Elastic Beanstalk Node.js Application Not Starting</figcaption></figure> 
+[<img class="size-medium wp-image-70" src="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/works-on-my-machine-300x196.jpg?fit=300%2C196" alt="it works on my machine" data-recalc-dims="1" />](http://i2.wp.com/www.geoffcorey.com/wp-content/uploads/2015/03/works-on-my-machine-e1426944703435.jpg)
 
 ## Problem: AWS Elastic Beanstalk Node.js Application Not Starting
 
@@ -70,6 +34,3 @@ So here is what happened. Package &#8220;Q&#8221; was already installed from an 
 ## TL;DR
 
 Your project <a title="Specifics of npm's package.json handling" href="https://docs.npmjs.com/files/package.json" target="_blank">package.json</a> may miss a <a title="Array of package names that will be bundled when publishing the package" href="https://docs.npmjs.com/files/package.json#bundleddependencies" target="_blank">bundledDependancies</a> package that may have existed in an earlier build. To ensure you package.json is correct, go to one of the test environment on AWS Elastic Beanstalk and click &#8220;Rebuild Environment&#8221; and retest.
-
-<div class="changetip_tipme_button" data-bid="z6jSWK7HBe4QYAMzwXSbHQ" data-uid="kZJeSKkyNFLTcR9hhZcRyH">
-</div>

@@ -1,15 +1,7 @@
 ---
-id: 118
 title: 'jshint warning &#8220;Don&#8217;t make functions within a loop&#8221;'
 date: 2015-03-20T23:05:15+00:00
 author: Geoff Corey
-layout: post
-guid: http://www.geoffcorey.com/?p=118
-permalink: /2015/03/jshint-warning-dont-make-functions-within-a-loop/
-pluto_featured_video_id:
-  - 
-pluto_featured_video_enabled:
-  - 0
 categories:
   - Node.js
 tags:
@@ -160,6 +152,3 @@ promisePreResolveHook(data_users);
 </pre>
 
 If you have a better way of handling this situation I would love to hear from you!
-
-<div class="changetip_tipme_button" data-bid="xFu4UWWvufahiS3MkCQzci" data-uid="kZJeSKkyNFLTcR9hhZcRyH">
-</div>
