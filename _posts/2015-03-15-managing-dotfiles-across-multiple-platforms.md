@@ -99,7 +99,7 @@ https://github.com/geoffcorey/bin
 
 Next, on my local machine we use vcsh to create a local repo for ~/bin and then push it to the remote repo on GitHub.
 
-'''bash
+{% highlight shell %}
   geoff@dev:~$ vcsh init bin
   Initialized empty Git repository in /home/geoff/.config/vcsh/repo.d/bin.git/
   geoff@dev:~$ vcsh bin add bin/bootstrap.sh
@@ -138,7 +138,7 @@ Next, on my local machine we use vcsh to create a local repo for ~/bin and then 
   Total 3 (delta 0), reused 0 (delta 0)
   To git@github.com:geoffcorey/bin.git
      3ecf045..6bbc29d  master -&gt; master
-'''
+{% endhighlight %}
 
 Now that I have <a title="~/bin files" href="http://github.com/geoffcorey/bin" target="_blank">github.com/geoffcorey/bin</a> I will do the same steps for my NeoVim configs <a title="dotfiles for NeoVim" href="http://github.com/geoffcorey/neovimrc" target="_blank">github.com/geoffcorey/neovimrc</a>
 
@@ -150,9 +150,9 @@ This handle utility will allow us to quickly deploy multiple repositories.   Th
 
 Lets use mr to configure the bin and vimrc repo so we can quickly deploy on a new user account.   We will start by cloning vcsh mr template.
 
-'''bash
+{% highlight shell %}
 $ cd ~<br /> $ vcsh clone git@github.com:RichiH/vcsh_mr_template.git mr
-'''
+{% endhighlight %}
 
 You now have
 
@@ -162,21 +162,21 @@ You now have
 
 Next create a blank mr repo on Github and change the origin URL for mr.
 
-'''bash
+{% highlight shell %}
   $ vcsh mr remote set-url origin git@github.com:geoffcorey/mr.git
-'''
+{% endhighlight %}
 
 Next let&#8217;s remove RichiH&#8217;s zsh.vcsh since we don&#8217;t plan on using his config. We also need to edit .config/available.d/mr.vcsh and point that to our repo instead of RichH&#8217;s.
 
-'''bash
+{% highlight shell %}
   $ nvim .config/mr/available.d/mr.vcsh
   $ vcsh mr remove .config/mr/available.d/zsh.vcsh
   $ vcsh mr commit -m "remove RichiH's zsh.vcsh and modified mr.vcsh to point to our repo"
-'''
+{% endhighlight %}
 
 Next, create <a href="https://github.com/geoffcorey/mr/blob/master/.config/mr/available.d/bin.vcsh" target="_blank">.config/available.d/bin.vcsh</a> and <a href="https://github.com/geoffcorey/mr/blob/master/.config/mr/available.d/neovimrc.vcsh" target="_blank">.config/availble.d/neovimrc.vcsh</a> files and soft link to the ~/.config/mr/config.d directory add them to mr repo.
 
-'''bash
+{% highlight shell %}
   $ cd .config/mr/config.d
   $ ln -s ../available.d/bin.vcsh .
   $ ln -s ../available.d/neovimrc.vcsh .
@@ -185,30 +185,30 @@ Next, create <a href="https://github.com/geoffcorey/mr/blob/master/.config/mr/av
   $ vcsh mr add .config/mr/config.d/bin.vcsh
   $ vcsh mr add .config/mr/config.d/neovimrc.vcsh
   $ vcsh mr commit -m "Added bin and neovimrc"
-'''
+{% endhighlight %}
 
 ## Installing a New Account
 
 Installing dotfiles on a new machine is now a lot easier. Just make sure you have git, vcsh and mr installed then execute the following commands.
 
-'''bash
+{% highlight shell %}
   $ cd ~
   $ vcsh clone git@github.com:geoffcorey/mr.git mr
   $ mr up
-'''
+{% endhighlight %}
 
 Then you can use the bootstrap.sh to finish your installation
 
-'''bash
+{% highlight shell %}
   $ ~/bin/bootstrap.sh
-'''
+{% endhighlight %}
 
 If you need to update your dotfiles from github just
 
-'''bash
+{% highlight shell %}
   $ cd ~
   $ mr up
-'''
+{% endhighlight %}
 
 ## Resources
 
