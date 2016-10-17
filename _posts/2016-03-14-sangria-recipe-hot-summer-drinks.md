@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Sangria Recipe for Summer
 date: 2016-03-14T16:31:19+00:00
 author: Geoff Corey

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Setup Amazon AWS wildcard SSL certificate
 date: 2015-04-19T14:54:01+00:00
 author: Geoff Corey

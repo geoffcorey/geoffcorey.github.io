@@ -1,4 +1,5 @@
 ---
+layout: post
 title: How to disable the systemd lid close event on linux
 date: 2015-08-15T16:46:30+00:00
 author: Geoff Corey

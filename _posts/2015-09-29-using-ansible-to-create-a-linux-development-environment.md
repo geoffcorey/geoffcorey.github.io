@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Using Ansible to Create a Linux Development Environment
 date: 2015-09-29T19:25:03+00:00
 author: Geoff Corey

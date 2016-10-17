@@ -1,4 +1,5 @@
 ---
+layout: post
 title: OpenStack OS::Heat::CloudConfig OS::Heat::MultipartMime
 date: 2016-03-01T18:17:56+00:00
 author: Geoff Corey

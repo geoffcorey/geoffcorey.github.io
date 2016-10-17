@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Secure cross-platform password management
 date: 2015-12-26T17:59:23+00:00
 author: Geoff Corey

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Rethinking my Linux setup
 date: 2015-12-29T02:57:06+00:00
 author: Geoff Corey

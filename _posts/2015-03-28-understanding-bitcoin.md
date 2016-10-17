@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Understanding Bitcoin
 date: 2015-03-28T13:43:36+00:00
 author: Geoff Corey

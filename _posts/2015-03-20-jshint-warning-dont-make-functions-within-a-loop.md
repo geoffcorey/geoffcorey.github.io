@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'jshint warning &#8220;Don&#8217;t make functions within a loop&#8221;'
 date: 2015-03-20T23:05:15+00:00
 author: Geoff Corey

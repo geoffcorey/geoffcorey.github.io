@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Managing Dotfiles Across Multiple Platforms
 date: 2015-03-15T21:34:37+00:00
 author: Geoff Corey
@@ -98,47 +99,46 @@ https://github.com/geoffcorey/bin
 
 Next, on my local machine we use vcsh to create a local repo for ~/bin and then push it to the remote repo on GitHub.
 
-<pre>geoff@dev:~$ <strong>vcsh init bin</strong>
-Initialized empty Git repository in /home/geoff/.config/vcsh/repo.d/bin.git/
-geoff@dev:~$ <strong>vcsh bin bin/bootstrap.sh</strong>
-git: 'bin/bootstrap.sh' is not a git command. See 'git --help'.
-geoff@dev:~$ <strong>vcsh bin add bin/bootstrap.sh</strong>
-geoff@dev:~$ <strong>git config --global user.email "geoff@geoffcorey.com"</strong>
-geoff@dev:~$ <strong>git config --global user.name "Geoff Corey</strong>"
-geoff@dev:~$ <strong>vcsh bin commit -m "initial commi</strong>t"
-[master (root-commit) 1ba2056] initial commit
- 1 file changed, 130 insertions(+)
- create mode 100755 bin/bootstrap.sh
-geoff@dev:~$ <strong>vcsh bin remote add origin git@github.com:geoffcorey/bin.git</strong>
-geoff@dev:~$ <strong>vcsh bin pull origin master</strong>
-From github.com:geoffcorey/bin
- * branch master -&gt; FETCH_HEAD
-Merge made by the 'recursive' strategy.
- LICENSE | 22 ++++++++++++++++++++++
- 1 file changed, 22 insertions(+)
- create mode 100644 LICENSE
-geoff@dev:~$ <strong>vcsh bin push origin master</strong>
-Counting objects: 7, done.
-Delta compression using up to 2 threads.
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (6/6), 1.75 KiB | 0 bytes/s, done.
-Total 6 (delta 0), reused 0 (delta 0)
-To git@github.com:geoffcorey/bin.git
- d3cc2f4..3ecf045 master -&gt; master
-geoff@dev:~$ <strong>vcsh bin mv LICENSE bin</strong>
-geoff@dev:~$ <strong>vcsh bin commit -m "move LICENSE file to directory"</strong>
-[master 6bbc29d] move LICENSE file to directory
- 1 file changed, 0 insertions(+), 0 deletions(-)
- rename LICENSE =&gt; bin/LICENSE (100%)
-geoff@dev:~$ <strong>vcsh bin push origin master</strong>
-Counting objects: 5, done.
-Delta compression using up to 2 threads.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 328 bytes | 0 bytes/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To git@github.com:geoffcorey/bin.git
-   3ecf045..6bbc29d  master -&gt; master
-</pre>
+'''bash
+  geoff@dev:~$ vcsh init bin
+  Initialized empty Git repository in /home/geoff/.config/vcsh/repo.d/bin.git/
+  geoff@dev:~$ vcsh bin add bin/bootstrap.sh
+  geoff@dev:~$ git config --global user.email "geoff@geoffcorey.com"
+  geoff@dev:~$ git config --global user.name "Geoff Corey"
+  geoff@dev:~$ vcsh bin commit -m "initial commit"
+  [master (root-commit) 1ba2056] initial commit
+   1 file changed, 130 insertions(+)
+   create mode 100755 bin/bootstrap.sh
+  geoff@dev:~$ vcsh bin remote add origin git@github.com:geoffcorey/bin.git
+  geoff@dev:~$ vcsh bin pull origin master
+  From github.com:geoffcorey/bin
+   * branch master -&gt; FETCH_HEAD
+  Merge made by the 'recursive' strategy.
+   LICENSE | 22 ++++++++++++++++++++++
+   1 file changed, 22 insertions(+)
+   create mode 100644 LICENSE
+  geoff@dev:~$ vcsh bin push origin master
+  Counting objects: 7, done.
+  Delta compression using up to 2 threads.
+  Compressing objects: 100% (4/4), done.
+  Writing objects: 100% (6/6), 1.75 KiB | 0 bytes/s, done.
+  Total 6 (delta 0), reused 0 (delta 0)
+  To git@github.com:geoffcorey/bin.git
+   d3cc2f4..3ecf045 master -&gt; master
+  geoff@dev:~$ <strong>vcsh bin mv LICENSE bin
+  geoff@dev:~$ <strong>vcsh bin commit -m "move LICENSE file to directory"
+  [master 6bbc29d] move LICENSE file to directory
+   1 file changed, 0 insertions(+), 0 deletions(-)
+   rename LICENSE =&gt; bin/LICENSE (100%)
+  geoff@dev:~$ vcsh bin push origin master
+  Counting objects: 5, done.
+  Delta compression using up to 2 threads.
+  Compressing objects: 100% (2/2), done.
+  Writing objects: 100% (3/3), 328 bytes | 0 bytes/s, done.
+  Total 3 (delta 0), reused 0 (delta 0)
+  To git@github.com:geoffcorey/bin.git
+     3ecf045..6bbc29d  master -&gt; master
+'''
 
 Now that I have <a title="~/bin files" href="http://github.com/geoffcorey/bin" target="_blank">github.com/geoffcorey/bin</a> I will do the same steps for my NeoVim configs <a title="dotfiles for NeoVim" href="http://github.com/geoffcorey/neovimrc" target="_blank">github.com/geoffcorey/neovimrc</a>
 
@@ -150,59 +150,65 @@ This handle utility will allow us to quickly deploy multiple repositories.   Th
 
 Lets use mr to configure the bin and vimrc repo so we can quickly deploy on a new user account.   We will start by cloning vcsh mr template.
 
-<p style="padding-left: 30px;">
-  $ cd ~<br /> $ vcsh clone git@github.com:RichiH/vcsh_mr_template.git mr
-</p>
+'''bash
+$ cd ~<br /> $ vcsh clone git@github.com:RichiH/vcsh_mr_template.git mr
+'''
 
 You now have
 
-<pre style="padding-left: 30px;">~/.mrconfig
-~/.config/mr/available.d/mr.vcsh
-~/.config/mr/available.d/zsh.vcsh
-~/.config/mr/config.d/mr.vcsh</pre>
+*  ~/.config/mr/available.d/mr.vcsh
+*  ~/.config/mr/available.d/zsh.vcsh
+*  ~/.config/mr/config.d/mr.vcsh
 
 Next create a blank mr repo on Github and change the origin URL for mr.
 
-<pre>$ vcsh mr remote set-url origin git@github.com:geoffcorey/mr.git
-</pre>
+'''bash
+  $ vcsh mr remote set-url origin git@github.com:geoffcorey/mr.git
+'''
 
 Next let&#8217;s remove RichiH&#8217;s zsh.vcsh since we don&#8217;t plan on using his config. We also need to edit .config/available.d/mr.vcsh and point that to our repo instead of RichH&#8217;s.
 
-<pre style="padding-left: 30px;">$ nvim .config/mr/available.d/mr.vcsh
-$ vcsh mr remove .config/mr/available.d/zsh.vcsh
-$ vcsh mr commit -m "remove RichiH's zsh.vcsh and modified mr.vcsh to point to our repo"
-</pre>
+'''bash
+  $ nvim .config/mr/available.d/mr.vcsh
+  $ vcsh mr remove .config/mr/available.d/zsh.vcsh
+  $ vcsh mr commit -m "remove RichiH's zsh.vcsh and modified mr.vcsh to point to our repo"
+'''
 
 Next, create <a href="https://github.com/geoffcorey/mr/blob/master/.config/mr/available.d/bin.vcsh" target="_blank">.config/available.d/bin.vcsh</a> and <a href="https://github.com/geoffcorey/mr/blob/master/.config/mr/available.d/neovimrc.vcsh" target="_blank">.config/availble.d/neovimrc.vcsh</a> files and soft link to the ~/.config/mr/config.d directory add them to mr repo.
 
-<pre style="padding-left: 30px;">$ cd .config/mr/config.d
-$ ln -s ../available.d/bin.vcsh .
-$ ln -s ../available.d/neovimrc.vcsh .
-$ vcsh mr add .config/mr/available.d/bin.vcsh
-$ vcsh mr add .config/mr/available.d/neovimrc.vcsh
-$ vcsh mr add .config/mr/config.d/bin.vcsh
-$ vcsh mr add .config/mr/config.d/neovimrc.vcsh
-$ vcsh mr commit -m "Added bin and neovimrc"
-</pre>
+'''bash
+  $ cd .config/mr/config.d
+  $ ln -s ../available.d/bin.vcsh .
+  $ ln -s ../available.d/neovimrc.vcsh .
+  $ vcsh mr add .config/mr/available.d/bin.vcsh
+  $ vcsh mr add .config/mr/available.d/neovimrc.vcsh
+  $ vcsh mr add .config/mr/config.d/bin.vcsh
+  $ vcsh mr add .config/mr/config.d/neovimrc.vcsh
+  $ vcsh mr commit -m "Added bin and neovimrc"
+'''
 
 ## Installing a New Account
 
 Installing dotfiles on a new machine is now a lot easier. Just make sure you have git, vcsh and mr installed then execute the following commands.
 
-<p style="padding-left: 30px;">
-  $ cd ~<br /> $ vcsh clone git@github.com:geoffcorey/mr.git mr<br /> $ mr up
-</p>
+'''bash
+  $ cd ~
+  $ vcsh clone git@github.com:geoffcorey/mr.git mr
+  $ mr up
+'''
 
 Then you can use the bootstrap.sh to finish your installation
 
-<p style="padding-left: 30px;">
+'''bash
   $ ~/bin/bootstrap.sh
-</p>
+'''
 
 If you need to update your dotfiles from github just
 
-<pre style="padding-left: 30px;">$ cd ~
-$ mr up</pre>
+'''bash
+  $ cd ~
+  $ mr up
+'''
 
 ## Resources
 

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'OS/X /etc/hosts &#8211; Adding Host Records'
 date: 2015-03-22T13:34:13+00:00
 author: Geoff Corey
