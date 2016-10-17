@@ -17,7 +17,7 @@ How to disable the systemd lid close event on linux has been tough to find a wor
 I changed /etc/systemd.logind.conf to ignore HandlePowerKey and HandleLidSwitch. That by itself didn&#8217;t fix the issue.
 
 /etc/systemd/logind.conf
-<pre>
+{% highlight config file %}
 # This file is part of systemd.
 #
 # systemd is free software; you can redistribute it and/or modify it
@@ -27,7 +27,7 @@ I changed /etc/systemd.logind.conf to ignore HandlePowerKey and HandleLidSwitch.
 #
 # Entries in this file show the compile time defaults.
 # You can change settings by editing this file.
-# Defaults can be restored by simply deleting this file.
+# Defaults can be restored by deleting this file.
 #
 # See logind.conf(5) for details.
 [Login]
@@ -53,12 +53,12 @@ HandleLidSwitch=ignore
 #IdleActionSec=30min
 #RuntimeDirectorySize=10%
 #RemoveIPC=yes
-</pre>
+{% endhighlight %}
 
 I created an alias command:
 
-<pre>
-alias ignorelidswitch='systemd-inhibit --what=handle-lid-switch sleep 2592000 &
-</pre>
+{% highlight shell %}
+$ alias ignorelidswitch='systemd-inhibit --what=handle-lid-switch sleep 2592000 &
+{% endhighlight %}
 
 and execute that when I startup my terminal session after logging into the system. Now under i3wm I no longer have my computer shutting down when the screen gets bumped by one of my cats or when I adjust the angle.

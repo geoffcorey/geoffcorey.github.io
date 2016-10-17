@@ -17,7 +17,8 @@ tags:
   2. Add my.domain.name
   3. Flush the cache
 
-<pre>sudo vi /private/etc/hosts
+{% highlight shell %}
+sudo vi /private/etc/hosts
 sudo dscacheutil -flushcache
 sudo killall -HUP mDNSResponder
-</pre>
+{% endhighlight %}

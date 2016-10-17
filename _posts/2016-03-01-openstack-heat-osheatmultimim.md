@@ -20,7 +20,7 @@ I have seen other folks use OS::Heat::SoftwareConfig and then echo their setting
 Using an <a href="http://example from OpenStack Heat Templates" target="_blank">example from OpenStack Heat Templates</a> to illustrate proper usage I can illustrate what was happening and what to fix.
 
 Example snippet:
-<pre>
+{% highlight yaml %}
 five_init:
   # this resource demonstrates multiple cloud-config resources
   # with a merge_how strategy
@@ -35,9 +35,9 @@ five_init:
        look what happens if you take out the merge_how
        and you will see that all the configs in
        server_init do not execute
-</pre>
+{% endhighlight %}
 
-<pre>
+{% highlight yaml %}
 server_init:
   type: OS::Heat::MultipartMime
   properties:
@@ -49,5 +49,6 @@ server_init:
   - config: {get_resource: three_four_init}
   type: multipart
   - config: {get_resource: five_init}</pre>
+{% endhighlight %}
 
 The key is the &#8220;merge_how&#8221; setting in OS::Heat::CloudConfig that makes this work, otherwise the new &#8220;- config&#8221; would replace the previous OS::Heat::CloudConfig resource.    By adding the &#8220;merge_how&#8221; setting we can override this behavior and append the setting.   For each of the configs in the OS::Heat::MultipartMime I had to make sure &#8220;merge_how&#8221; was added.  You can read more about merge_how in the <a href="http://cloudinit.readthedocs.org/en/latest/topics/merging.html" target="_blank">cloud_init docs</a>

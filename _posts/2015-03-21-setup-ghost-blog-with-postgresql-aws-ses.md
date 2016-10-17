@@ -24,16 +24,18 @@ On Amazon Web Service (AWS) setup a new <a title="Amazon Web Services - IAM" hre
 
 Environment variables:
 
-<pre>export APP_URL=http://blog.mycompany.com
+{% highlight shell %}
+export APP_URL=http://blog.mycompany.com
 export VERIFIED_FROM_EMAIL=no-reply@mycompany.com
 export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_KEY=
 export DB_URL=postgres://&lt;username&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;dbname&gt;
-</pre>
+{% endhighlight %}
 
 Here is the snippet of the config.js that will allow you to use Postgresql and Amazon SES.
 
-<pre>var config;
+{% highlight javascript %}
+var config
 
 config = {
     // ### Production
@@ -68,7 +70,4 @@ config = {
 
 // Export config
 module.exports = config;
-</pre>
-
-<div class="changetip_tipme_button" data-bid="pzorhLpQgQWHugNp82hjHF" data-uid="kZJeSKkyNFLTcR9hhZcRyH">
-</div>
+{% endhighlight %}

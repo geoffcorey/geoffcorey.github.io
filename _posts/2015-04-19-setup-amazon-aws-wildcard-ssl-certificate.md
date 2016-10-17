@@ -29,11 +29,14 @@ Make sure you have an admin email user for the domain (ex. admin@geoffcorey.com)
 
 ## Create a private key
 
-    openssl req -key geoffcorey.com.key -out geoffcorey.com.csr -new
+{% highlight shell %}
+$ openssl req -key geoffcorey.com.key -out geoffcorey.com.csr -new
+{% endhighlight %}
 
 ## Create a CSR
 
 
+{% highlight shell %}
     openssl req -key geoffcorey.com.key -out geoffcorey.com.csr -new
     Enter pass phrase for geoffcorey.com.key:
     You are about to be asked to enter information that will be incorporated
@@ -55,6 +58,7 @@ Make sure you have an admin email user for the domain (ex. admin@geoffcorey.com)
     to be sent with your certificate request
     A challenge password []:
     An optional company name []:
+{% endhighlight %}
 
 
 To complete your purchase of the wildcard, copy the contents of geoffcorey.com.csr to Comodo order and you will get emailed a zip file containing the following files:
@@ -65,11 +69,12 @@ To complete your purchase of the wildcard, copy the contents of geoffcorey.com.c
 
 ## Convert to PEM format
 
-Now we just need the public and private key in PEM format.
+Now we need the public and private key in PEM format.
 
-
-    openssl rsa -in geoffcorey.com.key -outform PEM >private.pem
-    openssl x509 -inform PEM -in STAR_geoffcorey_com.crt >public.pem
+{% highlight shell %}
+$ openssl rsa -in geoffcorey.com.key -outform PEM >private.pem
+$ openssl x509 -inform PEM -in STAR_geoffcorey_com.crt >public.pem
+{% endhighligh %}
 
 # Setup Amazon AWS wildcard SSL certificate
 
@@ -81,24 +86,30 @@ Now that we have a wildcard certificate we need to add it to our Amazon AWS acco
 
 There are various ways to install <a title="Installing the AWS Command Line Tool" href="http://docs.aws.amazon.com/cli/latest/userguide/installing.html" target="_blank">Amazon Command Line tool</a>.   I am using linux with python pip.
 
-    sudo pip install --upgrade awscli
+{% highlight shell %}
+$ sudo pip install --upgrade awscli
+{% endhighlight %}
 
 Create IAM credentials on AWS and get your access key and secret access key.  <a title="Configuring the AWS Command Line tool" href="http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" target="_blank">Configure awscli</a> tool to use your IAM credentials via
 
-    aws configure
+{% highlight shell %}
+$ aws configure
+{% endhighlight %}
 
 ## Upload certificates
 
 First copy is for server use such as Elastic Beanstalk or Elastic Load Balancers
 
-
-    aws iam upload-servercertificate --server-certificate-name geoffcorey.com --certificate-body file://STAR_geoffcorey_com.pem --private-key file://geoffcorey_com.pem --certificate-chain STAR_geoffcorey_com.ca-bundle
+{% highlight shell %}
+$ aws iam upload-servercertificate --server-certificate-name geoffcorey.com --certificate-body file://STAR_geoffcorey_com.pem --private-key file://geoffcorey_com.pem --certificate-chain STAR_geoffcorey_com.ca-bundle
+{% endhighlight %}
 
 
 This copy is used if you want to have an alternate domain name with Amazon Cloudfront to serve your S3 assest under your domain name.  Note the use of the **&#8211;path** option.
 
-
-    aws iam upload-servercertificate --server-certificate-name geoffcorey.com-cloudfront --certificate-body file://STAR_geoffcorey_com.pem --private-key file://geoffcorey_com.pem --certificate-chain STAR_geoffcorey_com.ca-bundle --path /cloudfront/
+{% highlight shell %}
+$ aws iam upload-servercertificate --server-certificate-name geoffcorey.com-cloudfront --certificate-body file://STAR_geoffcorey_com.pem --private-key file://geoffcorey_com.pem --certificate-chain STAR_geoffcorey_com.ca-bundle --path /cloudfront/
+{% endhighlight %}
 
 
 ## Setup Amazon Elastic Beanstalk wildcard SSL certificate
