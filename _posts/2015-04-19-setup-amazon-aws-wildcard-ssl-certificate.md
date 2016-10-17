@@ -74,7 +74,7 @@ Now we need the public and private key in PEM format.
 {% highlight shell %}
 $ openssl rsa -in geoffcorey.com.key -outform PEM >private.pem
 $ openssl x509 -inform PEM -in STAR_geoffcorey_com.crt >public.pem
-{% endhighligh %}
+{% endhighlight %}
 
 # Setup Amazon AWS wildcard SSL certificate
 
