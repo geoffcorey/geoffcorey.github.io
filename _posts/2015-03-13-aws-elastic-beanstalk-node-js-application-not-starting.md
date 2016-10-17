@@ -1,4 +1,5 @@
 ---
+layout: post
 title: AWS Elastic Beanstalk Node.js Application Not Starting
 date: 2015-03-13T03:42:52+00:00
 author: Geoff Corey

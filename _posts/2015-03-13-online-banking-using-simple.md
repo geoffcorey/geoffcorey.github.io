@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Online Banking Using Simple
 date: 2015-03-13T22:51:22+00:00
 author: Geoff Corey

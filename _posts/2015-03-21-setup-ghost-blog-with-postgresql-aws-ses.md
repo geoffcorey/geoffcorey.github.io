@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Setup Ghost Blog with Postgresql / AWS SES
 date: 2015-03-21T13:23:43+00:00
 author: Geoff Corey

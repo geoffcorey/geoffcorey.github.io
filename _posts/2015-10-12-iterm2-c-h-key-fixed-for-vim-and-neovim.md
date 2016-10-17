@@ -1,4 +1,5 @@
 ---
+layout: post
 title: iTerm2 C-h key fixed for VIM and NeoVim
 date: 2015-10-12T01:40:13+00:00
 author: Geoff Corey
