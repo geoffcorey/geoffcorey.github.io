@@ -20,7 +20,7 @@ articles I needed to be edited to make use of Jekyll features such as syntax hig
 code.  As of time of this writing, I am still cleaning up links and images.
 
 Next I followed github.io's instructions to setup my personal page.  I decided to use
-[Lagom's Theme](https://github.com/swanson/lagom) which is nice a minimal.
+[Lagom's Theme](https://github.com/swanson/lagom) which is a nice minimal theme.
 
 After installation, copying _posts over and editing them to add syntax highlighting I
 was ready to redirect the old articles to the new.  I used another plugin
