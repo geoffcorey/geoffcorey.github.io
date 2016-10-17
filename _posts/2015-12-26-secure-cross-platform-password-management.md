@@ -54,5 +54,3 @@ To add/edit the password data I export public and private key from the initial s
 For Android I copy the file over via USB connection and import into via OpenKeychain and then remove the files.
 
 I sync all my encrypted password with <a href="https://bitbucket.org/product/features" target="_blank">BitBucket.org</a> private GIT repo which is free for individuals and lock down the account with two-factor authentication using <a href="https://www.authy.com/app/mobile/" target="_blank">Authy</a>
-
-&nbsp;

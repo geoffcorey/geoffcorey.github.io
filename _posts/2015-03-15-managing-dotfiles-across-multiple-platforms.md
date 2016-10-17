@@ -189,7 +189,7 @@ Next, create <a href="https://github.com/geoffcorey/mr/blob/master/.config/mr/av
 
 ## Installing a New Account
 
-Installing dotfiles on a new machine is now a lot easier. Just make sure you have git, vcsh and mr installed then execute the following commands.
+Installing dotfiles on a new machine is now a lot easier. Make sure you have git, vcsh and mr installed then execute the following commands.
 
 {% highlight shell %}
   $ cd ~

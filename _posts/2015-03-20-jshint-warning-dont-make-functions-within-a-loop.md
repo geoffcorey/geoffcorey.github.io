@@ -14,7 +14,8 @@ tags:
 
 A typical situation for me is I want to augment a model before returning from GET REST call.   Here is a stripped down example:
 
-<pre>'use strict';
+{% highlight javascript %}
+'use strict';
 /*jshint node: true */
 var data_users = [
 {
@@ -67,15 +68,17 @@ function preResolveHook(users)
 }
 
 preResolveHook(data_users);
-</pre>
+{% endhighlight %}
 
 Run jshint on the above code I get
 
-<pre>bad.js: line 48, col 14, Don't make functions within a loop.
-</pre>
+{% highlight shell %}
+bad.js: line 48, col 14, Don't make functions within a loop.
+{% endhighlight %}
 
 Using &#8216;Q&#8217; for promises I reworked the code to fire off all the FakeRedis calls and stuff the returned promises in an array. Then I use Q.all([promises]) to wait for all the FakeRedis calls to complete and then augment the model with the result.
 
+{% highlight javascript %}
 <pre>'use strict';
 /*jshint node: true */
 var Q = require('q');
@@ -149,7 +152,6 @@ function promisePreResolveHook(users)
 }
 
 promisePreResolveHook(data_users);
-
-</pre>
+{% endhighlight %}
 
 If you have a better way of handling this situation I would love to hear from you!

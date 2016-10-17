@@ -23,7 +23,7 @@ A feature I really like is they ask what countries is this account going to be u
 
 ## Depositing Funds
 
-Funds can be deposited by linking other accounts, setting up direct deposit or just take a picture of a check you want to deposit.   Since I don&#8217;t want to link my other personal accounts I simply wrote myself a check with my personal account and took a picture of the front and back check to deposit with the mobile application.   Accounts newer then 30 days will put a hold on the check for 9 days.
+Funds can be deposited by linking other accounts, setting up direct deposit or take a picture of a check you want to deposit.   Since I don&#8217;t want to link my other personal accounts I simply wrote myself a check with my personal account and took a picture of the front and back check to deposit with the mobile application.   Accounts newer then 30 days will put a hold on the check for 9 days.
 
 ## Using Funds
 
