@@ -12,20 +12,20 @@ I have been rethinking my Linux setup.   Several things I like and don&#8217;t 
 
 ## Current Linux setup
 
-  * Distro: Ubuntu 15.04
+  * Distro: Ubuntu 16.04 (Home) RHEL 7 (work)
   * Window Manager: i3 + i3bar + conky + hack font
   * Dotfiles Management: vcsh, mr, git
   * Password Management: [Pass](http://www.passwordstore.org/), git, [GnuPG](https://www.gnupg.org/)
-  * Bookmark Management: Chrome
+  * Bookmark Management: Pocket
   * Email: GMail, ProtonMail, domain hosted + mutt + [GnuPG](https://www.gnupg.org/)
   * Encryption:[GnuPG](https://www.gnupg.org/), [keybase.io](https://keybase.io/geoffcorey)
-  * Cloud Storage: SpiderOakOne, Google Drive, Dropbox
+  * Cloud Storage: SpiderOakOne, Google Drive, Dropbox and encrypting before syncing
   * IRC: WeeChat
   * Messaging: Signal, Hangouts
 
 ##
 
-## <a href="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png" rel="attachment wp-att-267"><img class="alignright size-full wp-image-267" src="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?fit=650%2C365" alt="2015-12-28-214400_1366x768_scrot" srcset="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?w=1366 1366w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=300%2C169 300w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=768%2C432 768w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=1024%2C576 1024w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=1200%2C675 1200w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?w=1300 1300w" sizes="(max-width: 650px) 100vw, 650px" data-recalc-dims="1" /></a>
+<a href="images/2016-10-25-210749_1920x1080_scrot.png" rel="attachment wp-att-267"><img class="alignright size-full wp-image-267" src="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?fit=650%2C365" alt="2015-12-28-214400_1366x768_scrot" srcset="http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?w=1366 1366w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=300%2C169 300w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=768%2C432 768w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=1024%2C576 1024w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?resize=1200%2C675 1200w, http://i1.wp.com/www.geoffcorey.com/wp-content/uploads/2015/12/2015-12-28-214400_1366x768_scrot.png?w=1300 1300w" sizes="(max-width: 650px) 100vw, 650px" data-recalc-dims="1" /></a>
 
 ## What I like and don&#8217;t like?
 
@@ -36,6 +36,8 @@ Password management setup is a little complex.  There is always the chance that
 **UPDATE 01/03/16:** [Master Password](http://masterpasswordapp.com/) is buggy.  Tried the compile the CLI and tried the Java version.   CLI cannot compile and zero instructions on what is required.   The Java GUI client crashes when adding a web site.   So I will stay with my [current setup](http://www.geoffcorey.com/2015/12/secure-cross-platform-password-management/).
 
 **UPDATE 01/31/16:** Been using my old setup <a href="http://www.passwordstore.org" target="_blank">pass: the standard unix password manager</a> along side with <a href="https://spideroak.com/solutions/encryptr" target="_blank">Encryptr</a>.  Both are open-source and work on multiple platforms.   Encryptr is a lot easier to setup then Pass.   Only thing missing from Encryptr is a command-line tool but that is not a deal breaker.
+
+**UPDATE 10/25/16:** Going back to [Master Password](http://masterpasswordapp.com/) using web app and Android for most passwords.  Others will still be Encryptr
 
 I think I&#8217;m going back to Firefox.   Chrome has crashed a few too many times due to some race condition.   I suppose I could use Firefox bookmarks and sync across platforms that way.  In general I have been backing off on Google tools.  GMail/Inbox/Google Now has me a bit freaked out.    Been using [Signal](https://whispersystems.org/) more then Hangouts recently and I got into the desktop beta as well for Signal. [DuckDuckGo](https://duckduckgo.com/) instead of Google Search but sometimes I drop back.   I still think Google generates better results, especially when I time box the results.   Still learning all the DuckDuckGo [!Bangs](https://duckduckgo.com/bang) and I can see the DuckDuckGo advantages.
 
