@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/geoffcorey
+--------------------------------------------------------------------
+
+I hereby claim:
+
+* I am an admin of https://geoffcorey.github.io
+* I am geoffcorey (https://keybase.io/geoffcorey) on keybase.
+* I have a public key with fingerprint 66EC 217E E1AA 45A8 C890  9869 9E70 84DE C331 28CE
+
+To do so, I am signing this object:
+
+{
+	"body": {
+		"key": {
+			"eldest_kid": "0101a9167e1d800ca9a5efc43c87f8460a857881834bbcf67c6f210bc9b472b29fe10a",
+			"fingerprint": "66ec217ee1aa45a8c89098699e7084dec33128ce",
+			"host": "keybase.io",
+			"key_id": "9e7084dec33128ce",
+			"kid": "0101a9167e1d800ca9a5efc43c87f8460a857881834bbcf67c6f210bc9b472b29fe10a",
+			"uid": "ca6992b53f7ed3d95e0e118a108ccd00",
+			"username": "geoffcorey"
+		},
+		"service": {
+			"hostname": "geoffcorey.github.io",
+			"protocol": "https:"
+		},
+		"type": "web_service_binding",
+		"version": 1
+	},
+	"ctime": 1478797035,
+	"expire_in": 157680000,
+	"prev": "52bb9d83f42b5d378461725fe6ece97248086c1361a8056eca65a8dacdf78743",
+	"seqno": 47,
+	"tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMNDAnicrVJrUFRlGF4EvGALjZNTATp0oJEM6dzPdzaNQUUZHS2wEZVtl3P5znJc
+2bOXsxDuIDZKKAY5jGMpaSVeuBaWIRYpIEINSXRXwzWzJNtgvJEkIn1L9at+9uub
+753nfd7ned630xhqiAjZ79zqP00k9ob0tB/wGtYkHA74MFGTCzGTD7PDiQdukKFH
+t9pVGTNhOIETAk+wHCRkgOOSwAsMVCSakgCnAJrFBcBwABCAokVRUlhOYhWSwEWJ
+F2mOFElegQQuYEmYojps0O10qw4d0bIslEiCg5AQBJoRgAR4nAcsz0MOB7QMJYoi
+SCBB1JireYIdSJwoeGCyqqEa+lgn5P0H/n/W7Z2gkwSkjRQZSuGgTMk8A3FIEEAg
+cCBJMo4HgR7odgh5EKFtUFMUSXOjPIuSMFTPV5E0FG3Qy78wyTZVz/WKfzlzujVd
+k7QNCJGr606PKcigFzqDLQVQtP5NZhVVh4wSRR350O1RNQdmIhBS0tUgO0FzgOM5
+nGKSMPiiU3VDqxpEMByLwsDx4ByYjygZUhR5GVAKjczJFIeSITiSUSDaD+Q5kgY4
+YCWCYgkB4AwqCizalixIsoIm0BQWtOdyaJiJ5pBOwYY4ParNIeheN8SKOtrNYYaQ
+CMPk8EnBUzNETHvwnwP8aFfU2Mysrxb5NvF7Ce+MFU0//BZlarBc+iRt/tn2QH5f
+V/b5e8vGM+sc4dlJG+dWlHb97h+YtfBi7es7I780N20fijtz5a3+0PpYsKR/oPkF
+S/Vn12KailtHYi/EgMCcI69My73vv51Cv3+xPnFLdNfcGI/PH1CONhi3PvImP2f5
+5F7pQFXD0d19Jy/FrzvUeqLgXZYzvlfSpJmvNV9fvKAy2xS+v3xJy+DNZ3vqb4y2
+jJ04Ex1vX+i/23MyJh7LmLe+O6LztbEvno+aP9XaOJLwaHHn7Vkh5VP9meVbMkZe
+fTx29sqzh841YXHkS5a34+yn5TuRnLmvLa/6ueHGfS0ZHenpelpbhZlaumBtiLO4
+rGL06q/zLA/dgr90tbl2Pb0KHmw4lZVgWTd0/rsjtUbBFig01jzs2rnH8HmOjy+N
+7m5Lu24paU0f3zP7qVt9S5XKWm9BzgOXG7ftiDOn3l8V+TGdM5o75eXH1j6pDu2t
+OXbclFrqnPlhyrLDrTfuJL2xunt7QfSkWl/7CEPhx+Oj+a+TN/3Yd7Ns0cFhNS0t
+M5Wrqwrz2Nlvvh1/4ljh6tiq/s3lPd/PYIrtYXeZ6a5Ap5TTqF8dHpnesbk4bM2U
+K3lFH1g/dbvWV2cuD7WTdWPnVmRNtvRmbaxp9rqe+eny7saOlG1VhHFf1Mqf+cEL
+g/cK28v8i98pSRw4VfEHWfknLoLLuQ==
+=WXmO
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/geoffcorey
+
+==================================================================
+
