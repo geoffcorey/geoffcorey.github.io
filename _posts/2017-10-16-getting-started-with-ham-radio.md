@@ -7,7 +7,7 @@ author: "Geoff Corey"
 ---
 
 Online window shopping this year I saw you could get a
-[Baofeng Radio US BF-F9 V2+ 8-Watt Hi-Power (USA Warranty) Dual-Band 136-174/400-489.99 MHz Hand Held Ham Radio Two-Way Transceiver](href="https://www.amazon.com/gp/product/B00PTJ43FU/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00PTJ43FU&linkCode=as2&tag=geoffcorey-20&linkId=3102d098507d9e62b143e88f1902affa)
+[Baofeng Radio US BF-F9 V2+ 8-Watt Hi-Power (USA Warranty) Dual-Band 136-174/400-489.99 MHz Hand Held Ham Radio Two-Way Transceiver](https://www.amazon.com/gp/product/B00PTJ43FU/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00PTJ43FU&linkCode=as2&tag=geoffcorey-20&linkId=3102d098507d9e62b143e88f1902affa)
 for less the 50 bucks.  For that price it was a nice way to checkout HAM Radio
 and see what it was all about.
 
