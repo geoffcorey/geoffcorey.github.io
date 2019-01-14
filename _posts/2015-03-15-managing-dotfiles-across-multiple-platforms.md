@@ -151,7 +151,8 @@ This handle utility will allow us to quickly deploy multiple repositories.   Th
 Lets use mr to configure the bin and vimrc repo so we can quickly deploy on a new user account.   We will start by cloning vcsh mr template.
 
 {% highlight shell %}
-$ cd ~<br /> $ vcsh clone git@github.com:RichiH/vcsh_mr_template.git mr
+$ cd ~
+$ vcsh clone git@github.com:RichiH/vcsh_mr_template.git mr
 {% endhighlight %}
 
 You now have

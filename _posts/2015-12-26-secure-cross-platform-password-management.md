@@ -41,6 +41,8 @@ There are many solutions suggested from [PrivacyTools.io](https://www.privacytoo
 
 Update 1/11/16 &#8211; I took another look at Master Password and there are a few drawbacks.  First, all you can generate is a password. You cannot store any other information such as user name.   I suppose you could make a file for user names and urls and then use Master Password.   Second issue is some sites have length and character restrictions which Master Password does not take into account when generating a password.   Third, some sites require passwords to be changed in a period of time.   Only way to do that is change your pass phrase which would cause you to either change all your passwords or start remembering pass phrases for each site.   SpiderOak&#8217;s Encrypr looks really good and would be an easier solution then the &#8220;Nerd&#8221; solution I outlined below.   Only missing feature is a command line client.
 
+Update 1/14/19 - Still using Pass but now switching over to [Bit Warden](https://bitwarden.com/).  Bit Warden is nice and can also manage 2FA.  Currently I manage 2FA via [Authy](https://authy.com/)
+
 ### The solution for the Nerd
 
 <a href="http://Pass: The standard UNIX password manager" target="_blank">Pass: The standard UNIX password manager</a> has clients for all the major OS&#8217;s, command-line autocomplete, [dmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu) integration add even Firefox (however I don&#8217;t use this integration feature).   It uses your GNU PGP key for strong encryption and can be synchronized using GIT source management tool.  I use <a href="https://qtpass.org/" target="_blank">qtpass</a> for the GUI.   There are also clients for iOS, Windows, etc.
