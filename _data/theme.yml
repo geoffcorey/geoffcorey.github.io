@@ -7,16 +7,17 @@ highlight_color: '#3498db'
 social:
   github: geoffcorey
   #bitbucket: philipj
-  hacker_news: geoffcorey
+  #hacker_news: geoffcorey
   #stackexchange: 348619
   #stackoverflow: 348619
-  twitter: geoffcorey
+  #twitter: geoffcorey
   #facebook: zuck
   #tumblr: animalygifs
   linkedin: geoffcorey
   #gplus: 110552447039675960964
   gravatar: 385730e3d906036cddea2fbe1720c96a
   #flickr: johndoe
+  resume: https://cvonline.me/@6wgqag4is2
 
 # "Hi, I'm _______"
 name: Geoff Corey

@@ -22,3 +22,5 @@ Most of the Ansible scripts are pretty simple.   I swapped out Samuell&#8217;s 
 Source can be found at <a href="https://github.com/geoffcorey/devbox-ansible" target="_blank">github.com/geoffcorey/devbox-ansible</a> If you want to fork or just use it as a starting point just note that vars/user.yml needs to exist so I can close my <a href="http://github.com/geoffcorey/bin" target="_blank">github.com/geoffcorey/bin</a> repo.   Eventually it will also be used to clone a pass repo I use on BitBucket.
 
 Current setup can be found in the <a href="https://github.com/geoffcorey/devbox-ansible/blob/master/README.md" target="_blank">README.md</a> but the image defaults to zsh, git, mecurial, bzr, subversion, neovim with a ton of plugins, tmux, golang, nvm/node.js, rvm/ruby, python2.7, python3 and database clients for mongodb, postgresql, mysql, redis
+
+Update 07/2019 - This method was quickly abandoned in favor of using mr, vcsh and git.

@@ -50,6 +50,8 @@ to setup then Pass.   Only thing missing from Encryptr is a command-line tool b
 **UPDATE 10/25/16:** Going back to [Master Password](http://masterpasswordapp.com/) using web app and Android 
 for most passwords.  Others will still be Encryptr.
 
+**UPDATE 02/01/19:** Using [BitWarden](https://bitwarden.org) now for password management.
+
 I think I&#8217;m going back to Firefox.   Chrome has crashed a few too many times due to some race condition. 
 I suppose I could use Firefox bookmarks and sync across platforms that way.  In general I have been backing off 
 on Google tools.  GMail/Inbox/Google Now has me a bit freaked out.    Been using [Signal](https://whispersystems.org/) 
@@ -78,5 +80,3 @@ not a fan of RPM flavor distros.   Gentoo is fine but compiling everything is a
 Ubuntu is quick and easy to install.   If I do a reinstall I will likely do disk encryption but I need to read 
 up more on issues that can plaque laptops like suspend or sudden power offs if the encrypted disk holds up.  I would 
 consider FreeBSD as well but I do a lot of Docker development.
-
-So what are your thoughts?
