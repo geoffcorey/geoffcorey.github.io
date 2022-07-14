@@ -1,7 +1,7 @@
 ---
 title: Setup Amazon AWS wildcard SSL certificate
 season: summer
-tags: aws, ssl, certificates
+tags: aws ssl certificates
 ---
 Wildcard certificates allow you to use unlimited sub-domains with HTTPS/SSL.   Typically if you have 5 or more sub-domains it is cheaper to buy the wildcard certificate then individual subdomain SSL certificates.
 

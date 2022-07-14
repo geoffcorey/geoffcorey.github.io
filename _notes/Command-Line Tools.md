@@ -1,6 +1,6 @@
 ---
 title: Bash Command Line Tools
-tags: Bash
+tags: bash
 season : summer
 ---
 

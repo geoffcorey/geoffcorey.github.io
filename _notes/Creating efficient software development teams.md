@@ -1,7 +1,7 @@
 
 ---
 title: Creating efficient software development teams for growth and stability
-tags: 'lean methodology', 'kanban', 'agile', 'software development'
+tags: developement
 season : summer
 ---
 Creating efficient software development teams is a key success so your company can grow faster.  I am going to tell you how to overcome common problems software teams face when trying to rapidly add on new members and spin them up quickly so they can be productive quickly.

@@ -1,6 +1,6 @@
 ---
 title: TMUX
-tags: Bash, dotfiles, tmux
+tags: bash dotfiles tmux
 season : summer
 ---
 ## Windows(tabs)

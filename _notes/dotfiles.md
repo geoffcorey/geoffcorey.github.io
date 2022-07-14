@@ -1,6 +1,6 @@
 ---
 title: dotfiles
-tags: Bash, dotfiles, i3, vim, neovim, tmux
+tags: bash dotfiles i3 neovim tmux
 season : summer
 ---
 Managing dot files using a config manger based on Git [vcsh](https://github.com/RichiH/vcsh)

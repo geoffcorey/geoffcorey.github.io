@@ -1,6 +1,6 @@
 ---
 title: i3 Window Manger
-tags: dotfiles, i3
+tags: dotfiles i3
 season : summer
 ---
 
