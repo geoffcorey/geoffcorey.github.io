@@ -1,77 +1,101 @@
-# Lagom
+# Notenote.link
 
-> #### *Lagom* is a Swedish word with no direct English equivalent, meaning "just the right amount"
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7b37d412-1240-44dd-8539-a7001465b57a/deploy-status)](https://app.netlify.com/sites/notenotelink/deploys)
 
-Lagom, a [Jekyll][j] blog theme with just the right amount of style. 
+## Update !
 
-Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
+Hi everyone ! I've been very busy lately, so I didn't check all of the issues and the PR, but as I have more free time now I'll restart working on the project. Thanks for all the kind messages by the way!
 
+## What is this?
 
+A digital garden using a custom version of `simply-jekyll`, optimised for integration with [Obsidian](https://obsidian.md). It is more oriented on note-taking and aims to help you build a nice knowledge base that can scale with time. 
 
-* Responsive, based on [Skeleton][skeleton]
-* [Font Awesome][font-awesome] for icons
-* Open Sans from [Google web fonts][gfonts]
-* Built-in Atom feed
+**Demo is here: [notenote.link](https://notenote.link)**
 
-[![Live Demo](https://img.shields.io/badge/view-live--demo-blue.svg?style=flat-square)](http://lagom.mdswanson.com/)
+If you want to see a more refined example, you can check my notes (in french) at [arboretum.link](https://www.arboretum.link/). Build time is approx. 15 seconds, FYI.
 
-## Action Shots
-![](http://i.imgur.com/Pmzk4j1.png)
-![](http://i.imgur.com/CT2Xvug.png)
-![](http://i.imgur.com/XisjqW1.jpg)
+Issues are welcome, including feedback ! Don't hesitate to ask if you can't find a solution. 💫
 
-## Installation
+![screenshot](/assets/img/screenshot.png)
 
-- [Fork this repository][fork]
-- Clone it: `git clone https://github.com/YOUR-USER/lagom`
-- Install the [GitHub Pages gem][pages] (includes Jekyll): `bundle install`
-- Run the jekyll server: `jekyll serve`
+## What is different?
 
-You should have a server up and running locally at <http://localhost:4000>.
+- Markdown is fully-compatible with Obsidian (including Latex delimiters!)
+- There are now only notes (no blog posts).
+- There are cosmetic changes (ADHD-friendly code highlighting, larger font, larger page)
+- Code is now correctly indented
+- Wikilinks, but also alt-text wikilinks (with transclusion!) are usable.
 
-## Customization
+## How do I use this?
 
-Next you'll want to change a few things. Most of them can be changed directly in
-[theme.yml][config]. That's where you can add your social links, change the accent
-color, stuff like that.
+You can click on this link and let the deploy-to-netlify-for-free-script do the rest !
 
-There's a few other places that you'll want to change, too:
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Maxence-L/notenote.link)
 
-- [CNAME][cname]: If you're using this on GitHub Pages with a custom domain name, 
-  you'll want to change this to be the domain you're going to use. All that should 
-  be in here is a domain name on the first line and nothing else (like: `example.com`).
-- [favicon.png][favicon]: This is the icon in your browser's address bar. You should 
-  change it to whatever you'd like.
-- [logo.png][logo]: A square-ish image that appears in the upper-left corner
+Follow the [How to setup this site](https://notenote.link/notes/how-to-setup-this-site) guide, written by [raghuveerdotnet](https://github.com/raghuveerdotnet) and then adapted for this fork.
 
-## Deployment
+If you want to use it with Github Pages, it is possible, [please read this](https://github.com/Maxence-L/notenote.link/issues/5#issuecomment-762508069).
 
-You should deploy with [GitHub Pages][pages] - it's just easier.
+## How can I participate?
 
-All you should have to do is rename your repository on GitHub to be
-`username.github.io`. Since everything is on the `gh-pages` branch, you
-should be able to see your new site at <http://username.github.io>.
+Open an issue to share feedback or propose features. Star the repo if you like it! 🌟
 
-## Licensing
+## How do I customize this for my needs?
 
-[MIT](https://github.com/swanson/lagom/blob/master/LICENSE) with no
-added caveats, so feel free to use this on your site without linking back to
-me or using a disclaimer or anything silly like that.
+Things to modify to make it yours:
 
-## Contact
-I'd love to hear from you at [@_swanson][twitter]. Feel free to open issues if you
-run into trouble or have suggestions. Pull Requests always welcome.
+- Meta content in [\_layouts/post.html](_layouts/post.html):
+    ```html
+    <meta content="My linked notebook" property="og:site_name"/>
+    ```
+- The favicon and profile are here: [assets/img/](assets/img/)
+- The main stuff is in [\_config.yml](_config.yml):
+    ```yaml
+    title: notenotelink.netlify.com
+    name: notenote.link
+    user_description: My linked notebook
 
-[j]: http://jekyllrb.com/
-[mds]: http://mdswanson.com
-[skeleton]: http://www.getskeleton.com/
-[font-awesome]: http://fortawesome.github.io/Font-Awesome/
-[gfonts]: http://www.google.com/fonts/specimen/Open+Sans
-[fork]: https://github.com/swanson/lagom/fork
-[config]: https://github.com/swanson/lagom/blob/master/_data/theme.yml
-[cname]: https://github.com/swanson/lagom/blob/master/CNAME
-[favicon]: https://github.com/swanson/lagom/blob/master/favicon.png
-[logo]: https://github.com/swanson/lagom/blob/master/logo.png
-[pages]: http://pages.github.com
-[twitter]: https://twitter.com/_swanson
-[pages]: https://github.com/github/pages-gem
+    notes_url: "https://notenotelink.netlify.com/"
+    profile_pic: /assets/img/profile.png
+    favicon: /assets/img/favicon.png
+    copyright_name: MIT
+
+    baseurl: "/" # the subpath of your site, e.g. /blog
+    url: "https://notenotelink.netlify.com/" # the base hostname & protocol for your site, e.g. http://example.com
+    encoding: utf-8
+    ```
+- You may want to change the copyright in [\_includes/footer.html](_includes/footer.html):
+   ```html
+   <p id="copyright-notice">Licence MIT</p>
+   ```
+
+## How do I remove the "seasons" feature for the notes?
+
+Delete what's inside [\_includes/feed.html](_includes/feed.html) and replace it with:
+
+```liquid
+{%- if page.permalink == "/" -%}
+    {%- for item in site.notes -%}
+        <div class="feed-title-excerpt-block disable-select" data-url="{{site.url}}{{item.url}}">
+            <a href="{{ item.url }}" style="text-decoration: none; color: #555555;">
+            {%- if item.status == "Ongoing" or item.status == "ongoing" -%}
+                <ul style="padding-left: 20px; margin-top: 20px;" class="tags">
+                    <li style="padding: 0 5px; border-radius: 10px;" class="tag"><b>Status: </b>{{item.status | capitalize }}</li>
+                </ul>
+                <p style="margin-top: 0px;" class="feed-title">{{ item.title }}</p>
+            {%- else -%}
+                <p class="feed-title">{{ item.title }}</p>
+            {%- endif -%}
+                <p class="feed-excerpt">{{ item.content | strip_html | strip | escape | truncate: 200}}</p>
+            </a>
+        </div>
+    {%- endfor -%}
+{%- endif -%}
+````
+
+On command-line, you can run `bundle exec jekyll serve` then go to `localhost:4000` to check the result.
+
+## What's coming?
+
+- [Open-transclude](https://subpixel.space/entries/open-transclude/) integration in the template, if possible.
+- Different themes! - Please tell me which you'd like to have!

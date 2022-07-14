@@ -1,0 +1,100 @@
+I"ì<h1 id="neovim">NeoVim</h1>
+
+<p>Custom Vi setup</p>
+
+<h3 id="plugins">Plugins</h3>
+
+<ul>
+  <li>Plug 'bling/vim-airline'</li>
+  <li>Plug 'chrisbra/NrrwRgn'</li>
+  <li>Plug 'christoomey/vim-tmux-navigator'</li>
+  <li>Plug 'easymotion/vim-easymotion'</li>
+  <li>Plug 'editorconfig/editorconfig-vim'</li>
+  <li>Plug 'junegunn/fzf.vim'</li>
+  <li>Plug 'junegunn/goyo.vim'</li>
+  <li>Plug 'junegunn/limelight.vim'</li>
+  <li>Plug 'rbgrouleff/bclose.vim'</li>
+  <li>Plug 'scrooloose/nerdcommenter'</li>
+  <li>Plug 'scrooloose/nerdtree'</li>
+  <li>Plug 'ryanoasis/vim-devicons'</li>
+  <li>Plug 'terryma/vim-multiple-cursors'</li>
+  <li>Plug 'tpope/vim-fugitive'</li>
+  <li>Plug 'tpope/vim-surround'</li>
+  <li>Plug 'vimwiki/vimwiki'</li>
+  <li>Plug 'neoclide/coc.nvim'</li>
+  <li>Plug 'lifepillar/pgsql.vim'</li>
+  <li>Plug 'tclh123/vim-thrift'</li>
+  <li>Plug 'morhetz/gruvbox'</li>
+</ul>
+
+<h3 id="keymaps">Keymaps</h3>
+
+<h4 id="general">General</h4>
+
+<ul>
+  <li>, LEADER</li>
+  <li>,bg Toggle Colors</li>
+</ul>
+
+<h4 id="search">Search</h4>
+
+<ul>
+  <li>,c Clear search highlights</li>
+</ul>
+
+<h4 id="navigation">Navigation</h4>
+
+<ul>
+  <li>&lt;S-Left&gt; Previous Buffer</li>
+  <li>&lt;S-Right&gt; Next Buffer</li>
+  <li>,w buffer close</li>
+  <li>&lt;c-h&gt; TMUX Left</li>
+  <li>&lt;c-j&gt; TMUX Down</li>
+  <li>&lt;c-k&gt; TMUX Up</li>
+  <li>&lt;c-l&gt; TMUX Right</li>
+  <li>&lt;c-\&gt; TMUX Previousq</li>
+</ul>
+
+<h4 id="files">Files</h4>
+
+<ul>
+  <li>,d Nerdtree toggle</li>
+  <li>&lt;F2&gt; Nerdtree toggle</li>
+</ul>
+
+<h4 id="splits">Splits</h4>
+
+<ul>
+  <li>,v Vertical Split</li>
+  <li>,h Horizontal Split</li>
+</ul>
+
+<h4 id="code">Code</h4>
+
+<ul>
+  <li>gd definition</li>
+  <li>gy type definition</li>
+  <li>gi implimentation</li>
+  <li>gr references</li>
+  <li>[g diag prev</li>
+  <li>]g diag next</li>
+  <li>,a Codeaction selected</li>
+  <li>,f Format selected code</li>
+  <li>&lt;space&gt;a diag</li>
+  <li>&lt;space&gt;e ext</li>
+  <li>&lt;apace&gt;o outline</li>
+  <li>&lt;space&gt;s symbols</li>
+  <li>&lt;space&gt;j next</li>
+  <li>&lt;space&gt;k prev</li>
+  <li>&lt;space&gt;p list resume</li>
+  <li>&lt;F3&gt; Tag bar toggle</li>
+</ul>
+
+<h4 id="commands">Commands</h4>
+
+<ul>
+  <li>:Format Formatter</li>
+  <li>:Fold Fold function</li>
+  <li>:OR Organize imports</li>
+</ul>
+:ET

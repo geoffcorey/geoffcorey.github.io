@@ -1,0 +1,27 @@
+I"<ul>
+  <li>cat-&gt;<a href="https://github.com/sharkdp/bat">bat</a></li>
+  <li>ls-&gt;<a href="https://github.com/ogham/exa">exa </a></li>
+  <li>diff-&gt;<a href="https://dandavison.github.io/delta/usage.html">delta</a></li>
+  <li>du-&gt;<a href="https://github.com/bootandy/dust">dust</a></li>
+  <li>df-&gt;<a href="https://github.com/muesli/duf">duf</a></li>
+  <li>find-&gt;<a href="https://github.com/sharkdp/fd">fd</a></li>
+  <li>dig-&gt;<a href="https://github.com/ogham/dog">dog</a></li>
+  <li>top-&gt;<a href="https://github.com/aksakalli/gtop">gtop</a></li>
+  <li>ping-&gt;<a href="https://github.com/orf/gping">gping</a></li>
+  <li>ps-&gt;<a href="https://github.com/dalance/procs">proc</a></li>
+  <li>curl-&gt;<a href="https://github.com/httpie/httpie">httpie</a></li>
+  <li>grep-&gt;<a href="https://github.com/ggreer/the_silver_searcher">ag</a></li>
+  <li>vi-&gt;<a href="https://neovim.io/">NeoVIM</a>
+    <ul>
+      <li><a href="NeoVIM">customized</a> via <a href="dotfiles">dotfiles</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/RichiH/vcsh">vcsh</a></li>
+  <li><a href="https://github.com/tmux-plugins/tpm">tmux plugin manager</a>
+    <ul>
+      <li><a href="TMUX">TMUX</a></li>
+      <li><a href="dotfiles">dotfiles</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

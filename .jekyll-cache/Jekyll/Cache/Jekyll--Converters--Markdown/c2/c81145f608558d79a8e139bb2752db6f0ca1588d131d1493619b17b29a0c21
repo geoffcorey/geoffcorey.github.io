@@ -1,0 +1,13 @@
+I"ˆ<p>Adding Host Records is pretty straight forward.  Typically I do this when I'm running a local virtual machine or for testing services.  Slightly different then Linux because of OS/X DNS caching services.</p>
+
+<ol>
+  <li>Edit /private/etc/hosts</li>
+  <li>Add my.domain.name</li>
+  <li>Flush the cache</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vi /private/etc/hosts
+<span class="nb">sudo </span>dscacheutil <span class="nt">-flushcache</span>
+<span class="nb">sudo </span>killall <span class="nt">-HUP</span> mDNSResponder
+</code></pre></div></div>
+:ET
