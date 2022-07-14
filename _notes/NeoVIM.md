@@ -1,7 +1,6 @@
 ---
 title: NeoVim
 tags: dotfiles, vim, neovim
-toc: true
 season : summer
 ---
 Custom Vi setup
