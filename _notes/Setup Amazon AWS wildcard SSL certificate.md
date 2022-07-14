@@ -39,7 +39,7 @@ $ openssl req -key geoffcorey.com.key -out geoffcorey.com.csr -new
     Organization Name (eg, company) [Internet Widgits Pty Ltd]:Geoff Corey
     Organizational Unit Name (eg, section) []:
     Common Name (e.g. server FQDN or YOUR name) []:*.geoffcorey.com
-    Email Address []:admindotgeoffcorey.com
+    Email Address []: you know the drill here
 
     Please enter the following 'extra' attributes
     to be sent with your certificate request
