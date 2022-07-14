@@ -9,7 +9,7 @@ Setting up <a title="Amazon Web Services" href="http://aws.amazon.com/" target=
 
 ## Purchase a wildcard SSL certificate
 
-Make sure you have an admin email user for the domain (ex. admin@geoffcorey.com)
+Make sure you have an admin email user for the domain (ex. admin-dot-geoffcorey.com)
 
   * Order certificate from <a title="Wildcard SSL Certificate from Comodo for unlimited sub-domains" href="https://ssl.comodo.com/wildcard-ssl-certificates.php?key5sk0=1907&key5sk1=991e59169d76f8b61023d31b58045940b097e8b1" target="_blank">COMODO</a>
   * Validate you own the domain by checking email for a validation code
@@ -39,7 +39,7 @@ $ openssl req -key geoffcorey.com.key -out geoffcorey.com.csr -new
     Organization Name (eg, company) [Internet Widgits Pty Ltd]:Geoff Corey
     Organizational Unit Name (eg, section) []:
     Common Name (e.g. server FQDN or YOUR name) []:*.geoffcorey.com
-    Email Address []:admin@geoffcorey.com
+    Email Address []:admindotgeoffcorey.com
 
     Please enter the following 'extra' attributes
     to be sent with your certificate request
