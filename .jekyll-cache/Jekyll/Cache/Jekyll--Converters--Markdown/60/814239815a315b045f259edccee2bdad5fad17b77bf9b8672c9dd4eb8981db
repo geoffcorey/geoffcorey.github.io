@@ -1,0 +1,199 @@
+I"‹<h1 id="i3-window-manager">i3 Window Manager</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Description</th>
+      <th>Shortcut</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Application</td>
+      <td>Firefox</td>
+      <td>mod+i</td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td>Signal</td>
+      <td>mod+c</td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td>neomutt</td>
+      <td>mod+m</td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td>vifm</td>
+      <td>mod+o</td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td>Newsboat</td>
+      <td>mod+n</td>
+    </tr>
+    <tr>
+      <td>Screenshot</td>
+      <td>Desktop</td>
+      <td>Print</td>
+    </tr>
+    <tr>
+      <td>Screenshot</td>
+      <td>Window</td>
+      <td>$mod+Print</td>
+    </tr>
+    <tr>
+      <td>Screenshot</td>
+      <td>Selection</td>
+      <td>mod+Shift+Print</td>
+    </tr>
+    <tr>
+      <td>Menu</td>
+      <td>Open</td>
+      <td>mod+d</td>
+    </tr>
+    <tr>
+      <td>Kill Focused Window</td>
+      <td>Kill Focused</td>
+      <td>mod+Shift+q</td>
+    </tr>
+    <tr>
+      <td>Switch Focus</td>
+      <td>Left</td>
+      <td>mod+j</td>
+    </tr>
+    <tr>
+      <td>Switch Focus</td>
+      <td>Down</td>
+      <td>mod+k</td>
+    </tr>
+    <tr>
+      <td>Switch Focus</td>
+      <td>Up</td>
+      <td>mod+l</td>
+    </tr>
+    <tr>
+      <td>Switch Focus</td>
+      <td>Right</td>
+      <td>mod+semicolon</td>
+    </tr>
+    <tr>
+      <td>Move Focused Window</td>
+      <td>Left</td>
+      <td>mod+j</td>
+    </tr>
+    <tr>
+      <td>Move Focused Window</td>
+      <td>Down</td>
+      <td>mod+k</td>
+    </tr>
+    <tr>
+      <td>Move Focused Window</td>
+      <td>Up</td>
+      <td>mod+l</td>
+    </tr>
+    <tr>
+      <td>Move Focused Window</td>
+      <td>Right</td>
+      <td>mod+semicolon</td>
+    </tr>
+    <tr>
+      <td>Split</td>
+      <td>Horizontal</td>
+      <td>mod+h</td>
+    </tr>
+    <tr>
+      <td>Split</td>
+      <td>Vertical</td>
+      <td>mod+v</td>
+    </tr>
+    <tr>
+      <td>Fullscreen</td>
+      <td>Toggle</td>
+      <td>mod+f</td>
+    </tr>
+    <tr>
+      <td>Change Container Layout</td>
+      <td>Stacking</td>
+      <td>mod+s</td>
+    </tr>
+    <tr>
+      <td>Change Container Layout</td>
+      <td>Tabbed</td>
+      <td>mod+w</td>
+    </tr>
+    <tr>
+      <td>Change Container Layout</td>
+      <td>Toggle Split</td>
+      <td>mod+e</td>
+    </tr>
+    <tr>
+      <td>Tile / Floating</td>
+      <td>Toggle</td>
+      <td>mod+Shift+Space</td>
+    </tr>
+    <tr>
+      <td>Focus</td>
+      <td>Parent</td>
+      <td>mod+a</td>
+    </tr>
+    <tr>
+      <td>Switch Workspace</td>
+      <td>Switch</td>
+      <td>mod+workspace #</td>
+    </tr>
+    <tr>
+      <td>Moved Focused Window to Workspace</td>
+      <td>Move</td>
+      <td>mod+Shift+workspace #</td>
+    </tr>
+    <tr>
+      <td>Reload the configuration file</td>
+      <td>Reload</td>
+      <td>mod+Shift+c</td>
+    </tr>
+    <tr>
+      <td>Restart i3</td>
+      <td>Restart</td>
+      <td>mod+Shift+r</td>
+    </tr>
+    <tr>
+      <td>Exit i3</td>
+      <td>Exit</td>
+      <td>mod+Shift+e</td>
+    </tr>
+    <tr>
+      <td>Lockscreen</td>
+      <td>Lock</td>
+      <td>mod+Shift+x</td>
+    </tr>
+    <tr>
+      <td>Resize Window</td>
+      <td>Resize Mode</td>
+      <td>mod+r</td>
+    </tr>
+    <tr>
+      <td>Resize - Shrink Width</td>
+      <td>Width -</td>
+      <td>j</td>
+    </tr>
+    <tr>
+      <td>Resize - Grow Width</td>
+      <td>Width +</td>
+      <td>k</td>
+    </tr>
+    <tr>
+      <td>Resize - Shrink Height</td>
+      <td>Height -</td>
+      <td>l</td>
+    </tr>
+    <tr>
+      <td>Resize - Shrink Height</td>
+      <td>Height +</td>
+      <td>;</td>
+    </tr>
+  </tbody>
+</table>
+:ET
