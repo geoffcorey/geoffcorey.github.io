@@ -3,9 +3,16 @@ title: NeoVim
 tags: dotfiles neovim
 season : summer
 ---
-Custom Vi setup
+## Update
+With the advent of NeoVim 0.5 and lua I was starting to convert over to packer, native-lsp instead of using coc.   It was a lot of changes and re-writes.  Laziness caused me to to look at [LunarVim](https://www.lunarvim.org/#opinionated)
 
-## Plugins
+The short answer is I like it a lot.  It is well put together, easy to install and customizable.  Really the only thing I have done is change the theme.
+
+Highly recommended.
+
+## Custom Vi setup
+
+### Plugins
 
 * Plug 'bling/vim-airline'
 * Plug 'chrisbra/NrrwRgn'
