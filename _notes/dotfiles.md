@@ -6,8 +6,7 @@ season : summer
 Managing dot files using a config manger based on Git [vcsh](https://github.com/RichiH/vcsh)
 
 Current dotfiles manage
-
-* [i3 Window Manager](i3%20Window%20Manager)
+* [Wayland Hyprland](Wayland%20Hyprland)
 * [NeoVim](NeoVIM)
 * [TMUX](TMUX)
 

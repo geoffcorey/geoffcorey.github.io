@@ -16,7 +16,7 @@ season : summer
 * ps: [proc](https://github.com/dalance/procs)
 * curl: [httpie](https://github.com/httpie/httpie)
 * grep: [ag](https://github.com/ggreer/the_silver_searcher)
-* vi: [LunarVim](https://github.com/LunarVim/LunarVim)
+* vi: [nvchad](https://nvchad.com/)
 * [vcsh](https://github.com/RichiH/vcsh)
 * [tmux plugin manager](https://github.com/tmux-plugins/tpm)
   * [TMUX](TMUX)

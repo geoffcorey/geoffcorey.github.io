@@ -5,188 +5,247 @@ season : summer
 ---
 # NeoVim
 
-Custom Vi setup which use to be the old init.vim and then I didn't want to convert everything to lua and started with [nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide). From there added more plugins relating to my tmux setup and test harnesses. 
+Completely changed my NeoVim setup.  I tried LunarVim for awhile and settled on [nvchad](https://nvchad.com/)
 
-[nvim configs](https://github.com/geoffcorey/nvim)
+The installation is installed straight to ~/.config/nvim and can be updated with a git pull.
 
-### Plugins
+I modified the installation to add debugging, linting and formating for node.js
 
-- [packer](https://github.com/wbthomason/packer.nvim)
-- [plenary](https://github.com/nvim-lua/plenary.nvim)
-- [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
-- [Comment.nvim](https://github.com/numToStr/Comment.nvim)
-- [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
-- [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
-- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
-- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
-- [vim-bbye](https://github.com/moll/vim-bbye)
-- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-- [project.nvim](https://github.com/ahmedkhalf/project.nvim)
-- [impatient.nvim](https://github.com/lewis6991/impatient.nvim)
-- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
-- [alpha-nvim](https://github.com/goolord/alpha-nvim)
-- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
-- [darkplus.nvim](https://github.com/LunarVim/darkplus.nvim)
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
-- [cmp-path](https://github.com/hrsh7th/cmp-path)
-- [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
-- [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-- [cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua)
-- [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-- [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-- [nvim-lsp-installer](https://github.com/williamboman/nvim-lsp-installer)
-- [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
-- [vim-illuminate](https://github.com/RRethy/vim-illuminate)
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [nvim-dap](https://github.com/mfussenegger/nvim-dap)
-- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
-- [DAPInstall.nvim](https://github.com/ravenxrz/DAPInstall.nvim)
-- [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
-- [tmux-nvim](https://github.com/aserowy/tmux.nvim)
-- [vim-test](https://github.com/vim-test/vim-test")
-- [which-key](https://github.com/folke/which-key.nvim)
-- [vim-tmux-runner](https://github.com/christoomey/vim-tmux-runner)
+.config/nvim/lua/custom/chadrc.lua
+```
+---@type ChadrcConfig
+local M = {}
 
+M.ui = { theme = 'catppuccin' }
+M.plugins = "custom.plugins"
+M.mappings = require "custom.mappings"
 
-### Keymaps
+return M
+```
 
-- n  <CR>        *@<Lua function 209>
-- n  c           *@:e ~/.config/nvim/init.lua <CR>
-- n  c           *@:e ~/.config/nvim/init.lua <CR>
-- n  e           *@:ene | startinsert <CR>
-- n  f           *@:Telescope find_files <CR>
-- n  p           *@:lua require('telescope').extensions.projects.projects()<CR>
-- n  q           *@:qa<CR>
-- n  r           *@:Telescope oldfiles <CR>
-- n  t           *@:Telescope live_grep <CR>
-- n  <M-CR>      *@<Lua function 214>
-- n  <C-H>       * <Cmd>lua require'tmux'.move_left()<CR>
-- s  <Tab>       * <Lua function 258> cmp.utils.keymap.set_map
-- n  <NL>        * <Cmd>lua require'tmux'.move_bottom()<CR>
-- n  <C-K>       * <Cmd>lua require'tmux'.move_top()<CR>
-- n  <C-L>       * <Cmd>lua require'tmux'.move_right()<CR>
-- n  <C-W>       * <Cmd>lua require("which-key").show("\23", {mode = "n", auto = true})<CR>
-- n  <C-\\>       * <Cmd>execute v:count . "ToggleTerm"<CR>
-- x  <Space>     * <Cmd>lua require("which-key").show(" ", {mode = "v", auto = true})<CR>
-- n  <Space>     * <Cmd>lua require("which-key").show(" ", {mode = "n", auto = true})<CR>
-- n  <Space>tg   * :TestVisit<CR>
-- n  <Space>tl   * :TestLast<CR>
-- n  <Space>ta   * :TestSuite<CR>
-- n  <Space>tT   * :TestFile<CR>
-- n  <Space>tt   * :TestNearest<CR>
-- n  <Space>dt   * <Cmd>lua require'dap'.terminate()<CR>
-- n  <Space>du   * <Cmd>lua require'dapui'.toggle()<CR>
-- n  <Space>dl   * <Cmd>lua require'dap'.run_last()<CR>
-- n  <Space>dr   * <Cmd>lua require'dap'.repl.toggle()<CR>
-- n  <Space>dO   * <Cmd>lua require'dap'.step_out()<CR>
-- n  <Space>do   * <Cmd>lua require'dap'.step_over()<CR>
-- n  <Space>di   * <Cmd>lua require'dap'.step_into()<CR>
-- n  <Space>dc   * <Cmd>lua require'dap'.continue()<CR>
-- n  <Space>db   * <Cmd>lua require'dap'.toggle_breakpoint()<CR>
-- x  <Space>/    * <Esc><Cmd>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>
-- n  <Space>/    * <Cmd>lua require('Comment.api').toggle_current_linewise()<CR>
-- n  <Space>gg   * <Cmd>lua _LAZYGIT_TOGGLE()<CR>
-- n  <Space>fb   * :Telescope buffers<CR>
-- n  <Space>fp   * :Telescope projects<CR>
-- n  <Space>ft   * :Telescope live_grep<CR>
-- n  <Space>ff   * :Telescope find_files<CR>
-- n  <Space>e    * :NvimTreeToggle<CR>
-- n  <Space>h    * <Cmd>nohlsearch<CR>
-- n  !           * <Cmd>lua require("which-key").show("!", {mode = "n", auto = true})<CR>
-- n  "           * v:lua.tmux.sync_registers('"')
-- o  %             <Plug>(MatchitOperationForward)
-- x  %             <Plug>(MatchitVisualForward)
-- n  %             <Plug>(MatchitNormalForward)
-- n  '           * <Cmd>lua require("which-key").show("'", {mode = "n", auto = true})<CR>
-- n  <           * <Cmd>lua require("which-key").show("<", {mode = "n", auto = true})<CR>
-- v  <           * <gv
-- n  >           * <Cmd>lua require("which-key").show(">", {mode = "n", auto = true})<CR>
-- v  >           * >gv
-- n  @           * <Cmd>lua require("which-key").show("@", {mode = "n", auto = true})<CR>
-- n  H           * :bprevious<CR>
-- n  L           * :bnext<CR>
-- n  P           * v:lua.tmux.sync_registers('P')
-- n  Q           * <Cmd>Bdelete!<CR>
-- n  Y           * y$
-- x  [           * <Cmd>lua require("which-key").show("[", {mode = "v", auto = true})<CR>
-- n  [           * <Cmd>lua require("which-key").show("[", {mode = "n", auto = true})<CR>
-- o  [%            <Plug>(MatchitOperationMultiBackward)
-- x  [%            <Plug>(MatchitVisualMultiBackward)
-- n  [%            <Plug>(MatchitNormalMultiBackward)
-- x  ]           * <Cmd>lua require("which-key").show("]", {mode = "v", auto = true})<CR>
-- n  ]           * <Cmd>lua require("which-key").show("]", {mode = "n", auto = true})<CR>
-- o  ]%            <Plug>(MatchitOperationMultiForward)
-- x  ]%            <Plug>(MatchitVisualMultiForward)
-- n  ]%            <Plug>(MatchitNormalMultiForward)
-- n  \`           * <Cmd>lua require("which-key").show("`", {mode = "n", auto = true})<CR>
-- x  a           * <Cmd>lua require("which-key").show("a", {mode = "v", auto = true})<CR>
-- x  a%            <Plug>(MatchitVisualTextObject)
-- n  c           * <Cmd>lua require("which-key").show("c", {mode = "n", auto = true})<CR>
-- n  d           * <Cmd>lua require("which-key").show("d", {mode = "n", auto = true})<CR>
-- x  g           * <Cmd>lua require("which-key").show("g", {mode = "v", auto = true})<CR>
-- n  g           * <Cmd>lua require("which-key").show("g", {mode = "n", auto = true})<CR>
-- x  gx            <Plug>NetrwBrowseXVis
-- n  gx            <Plug>NetrwBrowseX
-- o  g%            <Plug>(MatchitOperationBackward)
-- x  g%            <Plug>(MatchitVisualBackward)
-- n  g%            <Plug>(MatchitNormalBackward)
-- n  gcA         * <Lua function 50> Comment insert end of line
-- n  gcO         * <Lua function 49> Comment insert above
-- n  gco         * <Lua function 48> Comment insert below
-- x  gb          * <Plug>(comment_toggle_blockwise_visual) Comment toggle blockwise (visual)
-- x  gc          * <Plug>(comment_toggle_linewise_visual) Comment toggle linewise (visual)
-- n  gbc         * <Lua function 43> Comment toggle current block
-- n  gcc         * <Lua function 42> Comment toggle current line
-- n  gb          * <Plug>(comment_toggle_blockwise) Comment toggle blockwise
-- n  gc          * <Plug>(comment_toggle_linewise) Comment toggle linewise
-- x  i           * <Cmd>lua require("which-key").show("i", {mode = "v", auto = true})<CR>
-- n  p           * v:lua.tmux.sync_registers('p')
-- v  p           * "_dP
-- n  v           * <Cmd>lua require("which-key").show("v", {mode = "n", auto = true})<CR>
-- n  y           * <Cmd>lua require("which-key").show("y", {mode = "n", auto = true})<CR>
-- n  z           * <Cmd>lua require("which-key").show("z", {mode = "n", auto = true})<CR>
-- s  <S-Tab>     * <Lua function 244> cmp.utils.keymap.set_map
-- n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))<CR>
-- s  <Plug>luasnip-jump-prev * <Cmd>lua require'luasnip'.jump(-1)<CR>
-- s  <Plug>luasnip-jump-next * <Cmd>lua require'luasnip'.jump(1)<CR>
-- s  <Plug>luasnip-prev-choice * <Cmd>lua require'luasnip'.change_choice(-1)<CR>
-- s  <Plug>luasnip-next-choice * <Cmd>lua require'luasnip'.change_choice(1)<CR>
-- s  <Plug>luasnip-expand-snippet * <Cmd>lua require'luasnip'.expand()<CR>
-- s  <Plug>luasnip-expand-or-jump * <Cmd>lua require'luasnip'.expand_or_jump()<CR>
--    <Plug>luasnip-expand-repeat * <Cmd>lua require'luasnip'.expand_repeat()<CR>
--    <Plug>luasnip-delete-check * <Cmd>lua require'luasnip'.unlink_current_if_deleted()<CR>
-- x  <Plug>(comment_toggle_blockwise_visual) * <Esc><Cmd>lua require("Comment.api").locked("toggle.blockwise")(vim.fn.visualmode())<CR> Comment toggle blockwise (visual)
-- x  <Plug>(comment_toggle_linewise_visual) * <Esc><Cmd>lua require("Comment.api").locked("toggle.linewise")(vim.fn.visualmode())<CR> Comment toggle linewise (visual) Comment insert below
-- n  <Plug>(comment_toggle_blockwise_count) * <Lua function 166> Comment toggle blockwise with count
-- n  <Plug>(comment_toggle_linewise_count) * <Lua function 129> Comment toggle linewise with count
-- n  <Plug>(comment_toggle_blockwise_current) * <Lua function 56> Comment toggle current block
-- n  <Plug>(comment_toggle_linewise_current) * <Lua function 61> Comment toggle current line
-- n  <Plug>(comment_toggle_blockwise) * <Lua function 165> Comment toggle blockwise
-- n  <Plug>(comment_toggle_linewise) * <Lua function 162> Comment toggle linewise
-- n  <M-h>       * <Cmd>lua require'tmux'.resize_left()<CR>
-- n  <M-k>       * <Cmd>lua require'tmux'.resize_top()<CR>
-- n  <M-l>       * <Cmd>lua require'tmux'.resize_right()<CR>
-- n  <M-j>       * <Cmd>lua require'tmux'.resize_bottom()<CR>
-- n  <Plug>(fzf-insert) * i
-- x  <Plug>NetrwBrowseXVis * :<C-U>call netrw#BrowseXVis()<CR>
-- n  <Plug>NetrwBrowseX * :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))<CR>
-- x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
-- o  <Plug>(MatchitOperationMultiForward) * :<C-U>call matchit#MultiMatch("W",  "o")<CR>
-- o  <Plug>(MatchitOperationMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "o")<CR>
-- x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
-- x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
-- n  <Plug>(MatchitNormalMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>
-- n  <Plug>(MatchitNormalMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>
-- o  <Plug>(MatchitOperationBackward) * :<C-U>call matchit#Match_wrapper('',0,'o')<CR>
-- o  <Plug>(MatchitOperationForward) * :<C-U>call matchit#Match_wrapper('',1,'o')<CR>
-- x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
-- x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
-- n  <Plug>(MatchitNormalBackward) * :<C-U>call matchit#Match_wrapper('',0,'n')<CR>
-- n  <Plug>(MatchitNormalForward) * :<C-U>call matchit#Match_wrapper('',1,'n')<CR>
-- n  <M-p>       * <Cmd>lua require"illuminate".next_reference{reverse=true,wrap=true}<CR>
-- n  <M-n>       * <Cmd>lua require"illuminate".next_reference{wrap=true}<CR>
+.config/nvim/lua/custom/mappings.lua
+```
+local M = {}
+
+M.dap = {
+  plugin = true,
+  n = {
+    ["<leader>db"] = {
+      "<cmd> DapToggleBreakpoint <CR>",
+      "Add breakpoint at line"
+    },
+    ["<leader>dr"] = {
+      "<cmd> DapContinue <CR>",
+      "Run or continue the debugger"
+    }
+  },
+}
+
+return M
+```
+
+.config/nvim/lua/custom/plugins.lua
+```
+❯ cat .config/nvim/lua/custom/plugins.lua
+local plugins = {
+  {
+    "rcarriga/nvim-dap-ui",
+    event = "VeryLazy",
+    dependencies = "mfussenegger/nvim-dap",
+    config = function()
+      local dap = require("dap")
+      local dapui = require("dapui")
+      require("dapui").setup()
+      dap.listeners.after.event_initialized["dapui_config"] = function()
+        dapui.open()
+      end
+      dap.listeners.before.event_terminated["dapui_config"] = function()
+        dapui.close()
+      end
+      dap.listeners.before.event_exited["dapui_config"] = function()
+        dapui.close()
+      end
+    end
+  },
+  {
+    "mfussenegger/nvim-dap",
+    event = "VeryLazy",
+    ft = { "javascript", "typescript" },
+    config = function()
+      require "custom.configs.dap"
+      require("core.utils").load_mappings("dap")
+    end
+  },
+  -- {
+  --   "jose-elias-alvarez/null-ls.nvim",
+  --   event = "VeryLazy",
+  --   opts = function()
+  --     return require "custom.configs.null-ls"
+  --   end,
+  -- },
+  {
+    "mhartington/formatter.nvim",
+    event = "VeryLazy",
+    opts = function()
+      return require "custom.configs.formatter"
+    end
+  },
+  {
+    "mfussenegger/nvim-lint",
+    event = "VeryLazy",
+    config = function()
+      require "custom.configs.lint"
+    end
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "eslint-lsp",
+        "js-debug-adapter",
+        "prettier",
+        "typescript-language-server"
+      }
+    }
+  },
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
+    end,
+  },
+}
+return plugins
+```
+
+~/.config/nvim/lua/custom/config/dap.lua
+```
+local dap = require("dap")
+
+dap.set_log_level 'debug'
+dap.adapters["pwa-node"] = {
+  type = "server",
+  host = "::1",
+  port = 8123,
+  executable = {
+    command = "js-debug-adapter",
+  }
+}
+
+for _, language in ipairs { "typescript", "javascript" } do
+  dap.configurations[language] = {
+    {
+      type = "pwa-node",
+      request = "launch",
+      name = "Launch file",
+      program = "${file}",
+      cwd = "${workspaceFolder}",
+      runtimeExecutable = "node",
+    },
+  }
+end
+```
+
+~/.config/nvim/lua/custom/config/formatter.lua
+```
+local M = {
+  filetype = {
+    javascript = {
+      require("formatter.filetypes.javascript").prettier
+    },
+    typescript = {
+      require("formatter.filetypes.typescript").prettier
+    },
+    ["*"] = {
+      require("formatter.filetypes.any").remove_trailing_whitespace
+    }
+  }
+}
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  command = "FormatWriteLock"
+})
+
+return M
+```
+
+~/.config/nvim/lua/custom/config/lint.lua
+```
+require('lint').linters_by_ft = {
+  javascript = {"eslint"},
+  typescript = {"eslint"},
+}
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  callback = function()
+    require("lint").try_lint()
+  end,
+})
+```
+
+~/.config/nvim/lua/custom/config/lint.lua
+```
+local config = require("plugins.configs.lspconfig")
+local on_attach = config.on_attach
+local capabilities = config.capabilities
+
+local lspconfig = require("lspconfig")
+
+local function organize_imports()
+  local params = {
+    command = "_typescript.organizeImports",
+    arguments = {vim.api.nvim_buf_get_name(0)},
+  }
+  vim.lsp.buf.execute_command(params)
+end
+
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSuggestions = true,
+    }
+  },
+  commands = {
+    OrganizeImports = {
+      organize_imports,
+      description = "Organize Imports",
+    }
+  }
+}
+```
+
+~/.config/nvim/lua/custom/config/null-ls.lua
+```
+
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+local null_ls = require("null-ls")
+
+local opts = {
+  sources = {
+    null_ls.builtins.diagnostics.eslint,
+    null_ls.builtins.formatting.prettier,
+  },
+  on_attach = function(client, bufnr)
+    if client.supports_method("textDocument/formatting") then
+      vim.api.nvim_clear_autocmds({
+        group = augroup,
+        buffer = bufnr,
+      })
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        group = augroup,
+        buffer = bufnr,
+        callback = function()
+          vim.lsp.buf.format({ bufnr = bufnr })
+        end,
+      })
+    end
+  end,
+}
+
+return opts
+```
+
+### 
