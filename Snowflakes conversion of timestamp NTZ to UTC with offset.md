@@ -5,6 +5,8 @@ tags:
   - timestamp_ntz
   - utc
   - SQL
+dg-publish: true
+dg-home: false
 ---
 Had an issue where I found a chunk of code was trying to convert Snowflakes timestamp_ntz stored in local `America/New_York` format to a UTC time format with offset.   The chunk of code did not take in account Daylight Savings Time.
 
