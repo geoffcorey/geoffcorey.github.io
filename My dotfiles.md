@@ -8,6 +8,7 @@ tags:
   - nvchad
   - tmux
   - wayland
+dg-home: true
 ---
 Managing dot files using a config manger based on Git [vcsh](https://github.com/RichiH/vcsh)
 
