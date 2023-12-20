@@ -4,4 +4,4 @@
 
 
 
-Trying digital garden with obsidian
+Along with the notes I am trying a new publishing method with obsidian, digital garden and vercel.
