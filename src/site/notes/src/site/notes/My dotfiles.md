@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/src/site/notes/my-dotfiles/","tags":["cli","liinux","hyprland","neovim","nvchad","tmux","wayland"]}
+{"dg-publish":true,"permalink":"/src/site/notes/my-dotfiles/","tags":["cli","liinux","hyprland","neovim","nvchad","tmux","wayland","gardenEntry"]}
 ---
 
 
