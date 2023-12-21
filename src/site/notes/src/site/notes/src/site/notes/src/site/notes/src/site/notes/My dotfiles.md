@@ -1,6 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/src/site/notes/my-dotfiles/","tags":["cli","liinux","hyprland","neovim","nvchad","tmux","wayland","gardenEntry"]}
+{"dg-publish":true,"permalink":"/src/site/notes/src/site/notes/src/site/notes/src/site/notes/my-dotfiles/","tags":["cli","liinux","hyprland","neovim","nvchad","tmux","wayland"]}
 ---
+
+
+
 
 
 Managing dot files using a config manger based on Git [vcsh](https://github.com/RichiH/vcsh)
