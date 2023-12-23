@@ -1,8 +1,8 @@
 ---
-tags:
-  - sangria
-  - recipe
 layout: post
+title:  "Sangria Recipe"
+date:   2023-12-23 10:18:29 -0500
+categories:  sangria recipe
 ---
 This is a Sangria recipe from I have been using from a good friend.  I'm not sure where he got the recipe to give it proper attribution but this makes a great summer drink.  Now that the tempeture is warming up and a big time early spring here in North Carolina I figure it would be a good time to share.   For this recipe I use a good Spanish or Chilean red  table wine.   It great for parties, hanging out at the pool or just plain relaxing.
 

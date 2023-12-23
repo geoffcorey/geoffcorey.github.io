@@ -1,10 +1,8 @@
 ---
-tags:
-  - software
-  - development
-  - programming
-  - process
 layout: post
+title:  "Creating efficient software development teams"
+date:   2023-12-23 10:18:29 -0500
+categories: software development programming process
 ---
 Creating efficient software development teams is a key success so your company can grow faster.  I am going to tell you how to overcome common problems software teams face when trying to rapidly add on new members and spin them up quickly so they can be productive quickly.
 

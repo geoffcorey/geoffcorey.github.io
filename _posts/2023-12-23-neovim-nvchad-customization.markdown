@@ -1,15 +1,8 @@
 ---
-tags:
-  - neovim
-  - nvchad
-  - lsp
-  - dap
-  - formatter
-  - eslint
-  - prettier
-  - mason
-  - cli
 layout: post
+title:  "NeoVim / NVchad customization"
+date:   2023-12-23 10:18:29 -0500
+categories:  neovim nvchad lsp dap formatter eslint prettier mason cli
 ---
 Completely changed my NeoVim setup.  I tried LunarVim for awhile and settled on [nvchad](https://nvchad.com/)
 

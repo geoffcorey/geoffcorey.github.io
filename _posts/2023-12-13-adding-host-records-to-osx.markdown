@@ -1,8 +1,8 @@
 ---
-tags:
-  - osx
-  - dns
 layout: post
+title:  "Adding host records to OS/X"
+date:   2023-12-23 10:18:29 -0500
+categories: osx dns
 ---
 Adding Host Records is pretty straight forward.  Typically I do this when I'm running a local virtual machine or for testing services.  Slightly different then Linux because of OS/X DNS caching services.
 

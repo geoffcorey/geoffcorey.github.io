@@ -1,7 +1,8 @@
 ---
-tags:
-  - cli
 layout: post
+title:  "Command-line Utilities"
+date:   2023-12-23 10:18:29 -0500
+categories: cli
 ---
 
 * cat: [bat](https://github.com/sharkdp/bat)

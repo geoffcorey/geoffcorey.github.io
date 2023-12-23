@@ -1,10 +1,8 @@
 ---
-tags:
-  - hyprland
-  - wayland
-  - linux
-  - arch
 layout: post
+title:  "Wayland Hyprland"
+date:   2023-12-23 10:18:29 -0500
+categories:  hyprland  wayland linux arch
 ---
 Recently moved off nvidia to AMD and i3 WM to Hyprland.   The nvidia move was a no brainer considering all the hoops you have to go through for closed source drivers.  AMD works flawlessly without using closed source drivers.
 

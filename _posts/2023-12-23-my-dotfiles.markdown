@@ -1,13 +1,8 @@
 ---
-tags:
-  - cli
-  - liinux
-  - hyprland
-  - neovim
-  - nvchad
-  - tmux
-  - wayland
 layout: post
+title:  "My dotfiles"
+date:   2023-12-23 10:18:29 -0500
+categories: cli linux hyprland neovim nvchad tmux wayland
 ---
 Managing dot files using a config manger based on Git [vcsh](https://github.com/RichiH/vcsh)
 

@@ -1,10 +1,8 @@
 ---
-tags:
-  - tmux
-  - linux
-  - tpm
-  - cli
 layout: post
+title:  "TMUX and TPM configuration"
+date:   2023-12-23 10:18:29 -0500
+categories:  tmux linux tpm cli
 ---
 ## Windows(tabs)
 
