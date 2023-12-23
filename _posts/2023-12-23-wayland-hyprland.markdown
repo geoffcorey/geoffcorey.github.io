@@ -10,4 +10,4 @@ Hyprland is one of those projects that can have you run down the rabbit hole of 
 
 After install I modify a few things for monitor setup [Monitors.conf](https://github.com/geoffcorey/dotfiles/blob/main/.config/hypr/configs/Monitors.conf#L13-L14) and add my pile of wallpapers that get auto rotated.
 
-![](desktop.jpg)
+![](assets/desktop.jpg)
