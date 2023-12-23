@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/command-line-utilities/","tags":["cli"]}
+tags:
+  - cli
+layout: post
 ---
-
 
 * cat: [bat](https://github.com/sharkdp/bat)
 * ls: [exa ](https://github.com/ogham/exa)

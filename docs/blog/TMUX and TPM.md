@@ -1,10 +1,10 @@
 ---
-dg-publish: true
 tags:
   - tmux
   - linux
   - tpm
   - cli
+layout: post
 ---
 ## Windows(tabs)
 

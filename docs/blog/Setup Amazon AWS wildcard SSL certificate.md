@@ -1,9 +1,9 @@
 ---
-dg-publish: true
 tags:
   - aws
   - ssl
   - https
+layout: post
 ---
 Wildcard certificates allow you to use unlimited sub-domains with HTTPS/SSL.   Typically if you have 5 or more sub-domains it is cheaper to buy the wildcard certificate then individual subdomain SSL certificates.
 

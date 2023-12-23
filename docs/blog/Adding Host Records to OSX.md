@@ -1,8 +1,8 @@
 ---
-dg-publish: 
 tags:
   - osx
   - dns
+layout: post
 ---
 Adding Host Records is pretty straight forward.  Typically I do this when I'm running a local virtual machine or for testing services.  Slightly different then Linux because of OS/X DNS caching services.
 

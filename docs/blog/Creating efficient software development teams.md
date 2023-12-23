@@ -1,7 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/creating-efficient-software-development-teams/","tags":["software","development","programming","process"]}
+tags:
+  - software
+  - development
+  - programming
+  - process
+layout: post
 ---
-
 Creating efficient software development teams is a key success so your company can grow faster.  I am going to tell you how to overcome common problems software teams face when trying to rapidly add on new members and spin them up quickly so they can be productive quickly.
 
 Writing good code is not enough.  When a new person joins the team they need to understand the software development process the team performs, the roles, the setup process,  on-boarding process and the procedures along that development journey from new feature to production deployment.  So how do you do that? Documentation.  I know, moan, groan, the code is the documentation and all the things developer like to avoid.   Well as a manager, VP, CIO/CTO you need to lead the way because if you don't, then your software team will be driving the business instead of the executives.

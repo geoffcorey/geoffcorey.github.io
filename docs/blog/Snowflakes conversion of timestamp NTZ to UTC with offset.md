@@ -1,5 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/snowflakes-conversion-of-timestamp-ntz-to-utc-with-offset/","tags":["snowflakes","dst","timestamp_ntz","utc","SQL"]}
+tags:
+  - snowflakes
+  - dst
+  - timestamp_ntz
+  - utc
+  - SQL
+layout: post
 ---
 
 Had an issue where I found a chunk of code was trying to convert Snowflakes timestamp_ntz stored in local `America/New_York` format to a UTC time format with offset.   The chunk of code did not take in account Daylight Savings Time.

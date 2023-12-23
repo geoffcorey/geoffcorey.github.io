@@ -1,5 +1,4 @@
 ---
-dg-publish: true
 tags:
   - cli
   - liinux
@@ -8,7 +7,7 @@ tags:
   - nvchad
   - tmux
   - wayland
-dg-home: false
+layout: post
 ---
 Managing dot files using a config manger based on Git [vcsh](https://github.com/RichiH/vcsh)
 

@@ -1,7 +1,16 @@
 ---
-{"dg-publish":true,"permalink":"/neo-vim-nvchad-customization/","tags":["neovim","nvchad","lsp","dap","formatter","eslint","prettier","mason","cli"]}
+tags:
+  - neovim
+  - nvchad
+  - lsp
+  - dap
+  - formatter
+  - eslint
+  - prettier
+  - mason
+  - cli
+layout: post
 ---
-
 Completely changed my NeoVim setup.  I tried LunarVim for awhile and settled on [nvchad](https://nvchad.com/)
 
 The installation is installed straight to ~/.config/nvim and can be updated with a git pull.
