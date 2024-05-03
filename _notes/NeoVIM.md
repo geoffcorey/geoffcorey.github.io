@@ -1,18 +1,29 @@
 ---
 title: NeoVim
 tags: dotfiles, vim, neovim
-season : summer
+season: summer
 ---
-# NeoVim
 
-Completely changed my NeoVim setup.  I tried LunarVim for awhile and settled on [nvchad](https://nvchad.com/)
+## Astronvim
 
-The installation is installed straight to ~/.config/nvim and can be updated with a git pull.
+Lately I have switched again to use [astronvim](https://astronvim) as a faster
+and much easier setup process. I can get 99% of the features I need from just
+adding community packs. Packs I am using [lua/community.lua](https://gitlab.com/geoffcorey/dotfiles/-/blob/master/.config/nvim/lua/community.lua?ref_type=heads)
 
-I modified the installation to add debugging, linting and formating for node.js
+Highly recommend folks give this Nvim distro a try
+
+## NeoVim (old setup)
+
+Completely changed my NeoVim setup. I tried LunarVim for awhile and settled on [nvchad](https://nvchad.com/)
+
+The installation is installed straight to ~/.config/nvim and can be updated with
+a git pull.
+
+I modified the installation to add debugging, linting and formatting for node.js
 
 .config/nvim/lua/custom/chadrc.lua
-```
+
+```lua
 ---@type ChadrcConfig
 local M = {}
 
@@ -24,7 +35,8 @@ return M
 ```
 
 .config/nvim/lua/custom/mappings.lua
-```
+
+```lua
 local M = {}
 
 M.dap = {
@@ -45,7 +57,8 @@ return M
 ```
 
 .config/nvim/lua/custom/plugins.lua
-```
+
+```lua
 ❯ cat .config/nvim/lua/custom/plugins.lua
 local plugins = {
   {
@@ -120,7 +133,8 @@ return plugins
 ```
 
 ~/.config/nvim/lua/custom/config/dap.lua
-```
+
+```lua
 local dap = require("dap")
 
 dap.set_log_level 'debug'
@@ -148,7 +162,8 @@ end
 ```
 
 ~/.config/nvim/lua/custom/config/formatter.lua
-```
+
+```lua
 local M = {
   filetype = {
     javascript = {
@@ -171,7 +186,8 @@ return M
 ```
 
 ~/.config/nvim/lua/custom/config/lint.lua
-```
+
+```lua
 require('lint').linters_by_ft = {
   javascript = {"eslint"},
   typescript = {"eslint"},
@@ -185,7 +201,8 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 ```
 
 ~/.config/nvim/lua/custom/config/lint.lua
-```
+
+```lua
 local config = require("plugins.configs.lspconfig")
 local on_attach = config.on_attach
 local capabilities = config.capabilities
@@ -218,7 +235,8 @@ lspconfig.tsserver.setup {
 ```
 
 ~/.config/nvim/lua/custom/config/null-ls.lua
-```
+
+```lua
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local null_ls = require("null-ls")
@@ -247,5 +265,3 @@ local opts = {
 
 return opts
 ```
-
-### 
