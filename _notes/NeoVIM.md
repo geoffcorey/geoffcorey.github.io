@@ -10,7 +10,42 @@ Lately I have switched again to use [astronvim](https://astronvim) as a faster
 and much easier setup process. I can get 99% of the features I need from just
 adding community packs. Packs I am using [lua/community.lua](https://gitlab.com/geoffcorey/dotfiles/-/blob/master/.config/nvim/lua/community.lua?ref_type=heads)
 
-Highly recommend folks give this Nvim distro a try
+Highly recommend folks give this Nvim distro a try. I found it easy to setup
+and configure. Actually, configuration was minimal. I brought up `:mason` and
+added various LSP, DAP, Linters and Formatters
+
+- css-lsp
+- html-lsp
+- json-lsp
+- lua-language-server
+- astro-language-server
+- awk-language-server
+- bash-language-server
+- dockerfile-language-server
+- emmet-ls
+- eslint_d
+- flake8
+- jq
+- js-debug-adapter
+- jsonlint
+- markdown-toc
+- markdownlint
+- marksman
+- node-debug2-adapter
+- prettierd
+- rstcheck
+- selene
+- sql-formatter
+- sqlls
+- stylua
+- typescript-language-server
+- typos-lsp
+
+Next I added [community plugins](https://gitlab.com/geoffcorey/dotfiles/-/tree/master/.config/nvim/lua?ref_type=heads)
+and [neotest](https://gitlab.com/geoffcorey/dotfiles/-/tree/master/.config/nvim/lua/plugins?ref_type=heads)
+
+NeoTest does a great job and I am able to run and debug mocha tests inside
+NeoVim now which makes me very happy.
 
 ## NeoVim (old setup)
 
